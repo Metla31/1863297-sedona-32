@@ -53,27 +53,19 @@
             </li>
           </ul>
           <div class="catalog-filters">    <!-- обертка для будущей стилизации флексами -->
-            <form action="" method="GET" class="catalog-filter">
+            <form action="https://echo.htmlacademy.ru/" method="GET" class="catalog-filter">
               <fieldset class="catalog-filter_group">
                 <legend class="catalog-filter-title">Инфраструктура:</legend>
-                  <input type="checkbox" checked>Бассейн
-                  <br>
-                  <input type="checkbox" checked>Парковка
-                  <br>
-                  <input type="checkbox">Wi-Fi
+                  <input type="checkbox" name="infrastructure" value="pool" checked>Бассейн
+                  <input type="checkbox" name="infrastructure" value="parking" checked>Парковка
+                  <input type="checkbox" name="infrastructure" value="WiFi">Wi-Fi
               </fieldset>
-            </form>
-            <form action="" method="GET" class="catalog-filter">
               <fieldset class="catalog-filter_group">
                 <legend class="catalog-filter-title">Тип жилья:</legend>
-                  <input type="radio" checked>Гостиница
-                  <br>
-                  <input type="radio">Мотель
-                  <br>
-                  <input type="radio">Апартаменты
+                  <input type="radio" name="type" value="hotel" checked>Гостиница
+                  <input type="radio" name="type" value="motel">Мотель
+                  <input type="radio" name="type" value="apartments">Апартаменты
               </fieldset>
-            </form>
-            <form action="" method="GET" class="catalog-filter">
               <fieldset class="catalog-filter_group">
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                 <label class="catalog-filter-label">
@@ -88,12 +80,10 @@
                 <button class="range-toggle toggle-max" type="button">
                   <span class="visually-hidden">Изменить максимальную цену.</span>
                 </button>
+                <button type="submit" class="catalog-fiter_apply">Применить</button>
+                <button type="reset" class="catalog-fiter_throw">Сбросить</button>
               </fieldset>
             </form>
-            <div class="catalog-filter-button">
-              <button type="submit" class="catalog-fiter_apply">Применить</button>
-              <button type="submit" class="catalog-fiter_throw">Сбросить</button>
-            </div>
           </div>   <!-- обертка для будущей стилизации флексами -->
         </section>
         <section class="catalog">
@@ -103,99 +93,101 @@
             <select class="catalog-select">
               <option>Сначала дешевые</option>
             </select>
-            <button type="button" class="sorting-filter">
+            <button type="button" class="sorting-displayoptions">Плитка
               <img src="#" alt="обычный режим">
             </button>
-            <button type="button" class="sorting-filter">
+            <button type="button" class="sorting-displayoptions">Карточка
               <img src="#" alt="режим боковой тени">
             </button>
-            <button type="button" class="sorting-filter">
+            <button type="button" class="sorting-displayoptions">Список
               <img src="#" alt="список режимов">
             </button>
           </div>
-          <div class="catalog-info">
-            <div class="catalog-info_found">
+          <div class="catalog-card">
+            <div class="catalog-card_found">
               <img src="" alt="Картинка отеля">
-              <div class="catalog-info_choice">
-                <h3 class="catalog-info_name">Amara Resort & Spa</h3>
-                <div class="catalog-info-inline">
-                  <p class="catalog-info-text">Гостиница</p>
-                  <p class="catalog-info-text">От 4000 ₽</p>
+              <div class="catalog-card_choice">
+                <h3 class="catalog-card_name">Amara Resort & Spa</h3>
+                <div class="catalog-card-inline">
+                  <p class="catalog-card-text">Гостиница</p>
+                  <p class="catalog-card-text">От 4000 ₽</p>
                 </div>
-                <button type="submit" class="catalog-button-details">подробнее</button>
-                <button type="submit" class="catalog-button-favorit">В избранное</button>
+                <button type="button" class="catalog-button-details">подробнее</button>
+                <button type="button" class="catalog-button-favorit">В избранное</button>
               </div>
               <div class="catalog-info-rating">
-                <img src="" alt="Количество звёзд">
-                <p class="info-rating-text">Рейтинг: 8,5</p>
+                <img src="" alt="4 звезды">
+                <p class="info-rating">Рейтинг: 8,5</p>
               </div>
             </div>
           </div>
-          <div class="catalog-info">
-            <div class="catalog-info_found">
+          <div class="catalog-card">
+            <div class="catalog-card_found">
               <img src="" alt="Картинка отеля">
-              <div class="catalog-info_choice">
-                <h3 class="catalog-info_name">Desert Quail Inn</h3>
-                <div class="catalog-info-inline">
-                  <p class="catalog-info-text">Мотель</p>
-                  <p class="catalog-info-text">От 3000 ₽</p>
+              <div class="catalog-card_choice">
+                <h3 class="catalog-card_name">Desert Quail Inn</h3>
+                <div class="catalog-card-inline">
+                  <p class="catalog-card-info">Мотель</p>
+                  <p class="catalog-card-info">От 3000 ₽</p>
                 </div>
-                <button type="submit" class="catalog-button-details">подробнее</button>
-                <button type="submit" class="catalog-button-favorit">В избранное</button>
+                <button type="button" class="catalog-button-details">подробнее</button>
+                <button type="button" class="catalog-button-favorit">В избранное</button>
               </div>
               <div class="catalog-info-rating">
-                <img src="" alt="Количество звёзд">
-                <p class="info-rating-text">Рейтинг: 8,9</p>
+                <img src="" alt="3 звезды">
+                <p class="info-rating">Рейтинг: 8,9</p>
               </div>
             </div>
           </div>
-          <div class="catalog-info">
-            <div class="catalog-info_found">
+          <div class="catalog-card">
+            <div class="catalog-card_found">
               <img src="" alt="Картинка отеля">
-              <div class="catalog-info_choice">
-                <h3 class="catalog-info_name">Villas at Poco Diablo</h3>
-                <div class="catalog-info-inline">
-                  <p class="catalog-info-text">Апартаменты</p>
-                  <p class="catalog-info-text">От 2000 ₽</p>
+              <div class="catalog-card_choice">
+                <h3 class="catalog-card_name">Villas at Poco Diablo</h3>
+                <div class="catalog-card-inline">
+                  <p class="catalog-card-info">Апартаменты</p>
+                  <p class="catalog-card-info">От 2000 ₽</p>
                 </div>
-                <button type="submit" class="catalog-button-details">подробнее</button>
-                <button type="submit" class="catalog-button-favorit">В избранное</button>
+                <button type="button" class="catalog-button-details">подробнее</button>
+                <button type="button" class="catalog-button-favorit">В избранное</button>
               </div>
-              <div class="catalog-info-rating">
-                <img src="" alt="Количество звёзд">
-                <p class="info-rating-text">Рейтинг: 9,2</p>
+              <div class="catalog-card-rating">
+                <img src="" alt="2 звезды">
+                <p class="card-rating">Рейтинг: 9,2</p>
               </div>
             </div>
           </div>
-          <div class="catalog-info">
-            <div class="catalog-info_found">
+          <div class="catalog-card">
+            <div class="catalog-card_found">
               <img src="" alt="Картинка отеля">
-              <div class="catalog-info_choice">
-                <h3 class="catalog-info_name">GreenTree Inn</h3>
-                <div class="catalog-info-inline">
-                  <p class="catalog-info-text">Гостиница</p>
-                  <p class="catalog-info-text">От 3000 ₽</p>
+              <div class="catalog-card-choice">
+                <h3 class="catalog-card_name">GreenTree Inn</h3>
+                <div class="catalog-card-inline">
+                  <p class="catalog-card-text">Гостиница</p>
+                  <p class="catalog-card-text">От 3000 ₽</p>
                 </div>
                 <button type="submit" class="catalog-button-details">подробнее</button>
               </div>
-              <div class="catalog-info-rating">
-                <img src="" alt="Количество звёзд">
-                <p class="info-rating-text">Рейтинг: 9,2</p>
+              <div class="catalog-v-rating">
+                <img src="" alt="2 звезды">
+                <p class="card-rating">Рейтинг: 9,2</p>
               </div>
             </div>
           </div>
           <button type="submit" class="catalog-button-loadmore">Загрузить еще</button>
           <div class="pagination">
-            <button type="submit" class="pagination-page">1</button>
-            <button type="submit" class="pagination-page">2</button>
-            <button type="submit" class="pagination-page">3</button>
-            <button type="submit" class="pagination-page">4</button>
-            <button type="submit" class="pagination-page">...</button>
-            <button type="submit" class="pagination-page">10</button>
-            <div class="pagination-inline">
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">...</a>
+            <a href="#">10</a>
+            <div class="pagination-controls">
               <p>Гостиниц на странице:</p>
               <select class="pagination-select">
                 <option>4</option>
+                <option>8</option>
+                <option>12</option>
               </select>
             </div>
           </div>
