@@ -3,42 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title>Каталог Седона</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <!-- Header start -->
     <header class="page-header">
-        <nav class="navigation">
-          <ul class="navigation-list">
-            <li class="navigation-item">
-              <a href="#" class="navigation-link">Главная</a>
-            </li>
-            <li class="navigation-item">
-              <a href="#" class="navigation-link">О Седоне</a>
-            </li>
-            <li class="navigation-item">
-              <a href="#" class="navigation-link">Гостиницы</a>
-            </li>
-          </ul>
-          <img class="navigation-logo" src="/images/navlogo.svg" alt="Логотип">
-          <ul class="navigation-list">
-            <li class="navigation-item navigation-user">
-              <a href="#" class="navigation-link">
-                <span class="visually-hidden">поиск</span>
-                <img src="/images/search.svg" alt="Поиск">
-              </a>
-            </li>
-            <li class="navigation-item">
-              <a href="#" class="navigation-link">
-                <span class="visually-hidden">понравилось</span>
-                <img src="/images/like.svg" alt="избранное">
-              </a>
-            </li>
-            <li class="navigation-item">
-              <button class="navigation-button">Хочу сюда!</button>
-            </li>
-          </ul>
-        </nav>
-      </header>
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">Гостиницы</a>
+          </li>
+        </ul>
+        <a href="">
+          <img src="./images/sedona_logo.png" alt="Логотип">
+        </a>
+        <ul class="navigation-list">
+          <li class="navigation-item navigation-user">
+            <a href="#" class="navigation-link">
+              <span class="visually-hidden">поиск</span>
+              <img src="./images/search.png" alt="Поиск">
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">
+              <span class="visually-hidden">понравилось</span>
+              <img src="./images/like.png" alt="избранное">
+            </a>
+          </li>
+          <li class="navigation-item">
+            <button class="navigation-button">Хочу сюда!</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
       <!-- Header end -->
       <!-- main start -->
     <main>
@@ -48,11 +51,11 @@
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="index.html">
                 <span class="visually-hidden">Главная</span>
-                <img src="/images/img_catalog/home.svg" alt="На главную">
+                <img src="./images/img_catalog/home-ico.svg" alt="На главную">
               </a>
             <li class="bradcrumbs-item">
               <a href="#" class="braedcrumbs-link">
-                <img src="/images/img_catalog/arrow_right.svg" alt="Стрека перехода">
+                <img src="./images/img_catalog/nav-arrow.svg" alt="Стрека перехода">
               </a>
             </li>
             </li>
@@ -102,20 +105,20 @@
               <option>Сначала дешевые</option>
             </select>
             <button type="button" class="sorting-listmode">Плитка
-              <img src="/images/img_catalog/mode-tile 1.svg" alt="обычный режим">
+              <img src="./images/img_catalog/mode-tile.png" alt="обычный режим">
             </button>
             <button type="button" class="sorting-listmode">Карточка
-              <img src="/images/img_catalog/mode-slideshow 1.svg" alt="режим слайдов">
+              <img src="./images/img_catalog/mode-slide.png" alt="режим слайдов">
             </button>
-            <button type="button" class="sorting-listmode">Список
-              <img src="/images/img_catalog/mode-list 1.svg" alt="список режимов">
+            <button type="button" class="sorting-listmode">Список.
+              <img src="./images/img_catalog/mode-list.png" alt="список режимов">
             </button>
           </div>
           <article class="card">
-            <img src="/images/img_catalog/Amara_Resort_and_Spa.jpg" alt="Картинка отеля">
+            <img src="./images/img_catalog/Amara.jpg" alt="Картинка отеля">
             <div class="card-info">
               <h3 class="card-name">Amara Resort & Spa</h3>
-              <div class="card-inline">
+              <div class="card-prise-wrapper">
                 <p class="card-type">Гостиница</p>
                 <p class="card-price">От 4000 ₽</p>
               </div>
@@ -123,15 +126,15 @@
               <button type="button" class="button-favorit">В избранное</button>
             </div>
             <div class="rating">
-              <img src="/images/img_catalog/4stars.svg" alt="4 звезды">
+              <img src="./images/img_catalog/4stars.png" alt="4 звезды">
               <p class="info-rating">Рейтинг: 8,5</p>
              </div>
           </article>
           <article class="card">
-            <img src="/images/img_catalog/Desert_Quail_Inn.jpg" alt="Картинка отеля">
+            <img src="./images/img_catalog/Desert.jpg" alt="Картинка отеля">
             <div class="card-info">
               <h3 class="card-name">Desert Quail Inn</h3>
-              <div class="card-inline">
+              <div class="card-prise-wrapper">
                 <p class="card-type">Мотель</p>
                 <p class="card-price">От 3000 ₽</p>
               </div>
@@ -139,15 +142,15 @@
               <button type="button" class="button-favorit">В избранное</button>
             </div>
             <div class="rating">
-              <img src="/images/img_catalog/3stars.svg" alt="3 звезды">
+              <img src="./images/img_catalog/3stars.png" alt="3 звезды">
               <p class="info-rating">Рейтинг: 8,9</p>
              </div>
           </article>
           <article class="card">
-            <img src="/images/img_catalog/Villas_at_Poco_Diablo.jpg" alt="Картинка отеля">
+            <img src="./images/img_catalog/Villas.jpg" alt="Картинка отеля">
             <div class="card-info">
               <h3 class="card-name">Villas at Poco Diablo</h3>
-              <div class="card-inline">
+              <div class="card-prise-wrapper">
                 <p class="card-type">Апартаменты</p>
                 <p class="card-price">От 2000 ₽</p>
               </div>
@@ -155,23 +158,22 @@
               <button type="button" class="button-favorit">В избранное</button>
             </div>
             <div class="rating">
-              <img src="/images/img_catalog/2stars.svg" alt="2 звезды">
+              <img src="./images/img_catalog/2stars.png" alt="2 звезды">
               <p class="info-rating">Рейтинг: 9,2</p>
              </div>
           </article>
           <article class="card">
-            <img src="/images/img_catalog/GreenTree_Inn.jpg" alt="Картинка отеля">
+            <img src="./images/img_catalog/GreenTree.jpg" alt="Картинка отеля">
             <div class="card-info">
               <h3 class="card-name">GreenTree Inn</h3>
-              <div class="card-inline">
+              <div class="card-prise-wrapper">
                 <p class="card-type">Гостиница</p>
                 <p class="card-price">От 3000 ₽</p>
               </div>
               <button type="button" class="button-details">подробнее</button>
-              <button type="button" class="button-favorit">В избранное</button>
-            </div>
+              <button type="button" class="button-favorit">В избранное</button>png          </div>
             <div class="rating">
-              <img src="/images/img_catalog/2stars.svg" alt="2 звезды">
+              <img src="./images/img_catalog/2stars.png" alt="2 звезды">
               <p class="info-rating">Рейтинг: 9,2</p>
              </div>
           </article>
@@ -210,12 +212,12 @@
     <!-- footer start -->
     <footer class="footer">
       <div class="footer-social">
-        <img src="/images/social-twitter.svg" alt="twitter" class="footer-social_ico">
-        <img src="/images/social-facebook.svg" alt="facebook" class="footer-social_ico">
-        <img src="/images/social-youtube.svg" alt="youtube" class="footer-social_ico">
+        <img src="./images/social-twitter.png" alt="twitter" class="footer-social_ico">
+        <img src="./images/social-facebook.png" alt="facebook" class="footer-social_ico">
+        <img src="./images/social-youtube.png" alt="youtube" class="footer-social_ico">
       </div>
       <a href="tel:+78128121212" class="tel-number">+7 (812) 812-12-12</a>
-      <img src="/images/logo_academy.svg" alt="Логотип академии" class="footer-logo">
+      <img src="./images/logo_htmlacademy.png" alt="Логотип академии" class="footer-logo">
     </footer>
     <!-- footer end -->
 </body>
