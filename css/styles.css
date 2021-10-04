@@ -1,0 +1,232 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: local("PT Sans"),
+        url(/fonts/ptsans-400.woff2);
+    font-display: swap
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: local("PT Sans"),
+        url(/fonts/ptsans-700.woff2);
+    font-display: swap
+}
+
+body {
+    font-family: "PT Sans", "Arial", sans-serif;
+    color: #000000;
+}
+
+.navigation-item {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    text-decoration: none;
+    color: black;
+}
+
+.main-intro_welcome {
+    background: url(/images/index-background.jpg) no-repeat;
+}
+
+.heading {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 36px;
+    text-align: center;
+    color: #333333;
+}
+
+.benefits-card {
+    background: #83B3D3;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.benefits-heading {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.benefits-card-bg {
+    background: rgba(131, 179, 211, 0.12);
+}
+
+.benefits-card-textstyle{
+    color: white;
+}
+
+.benefits-cards-food{
+    background: #fff;
+}
+
+.benefits-card-passbg{
+    background: rgba(131, 179, 211, 0.2);
+}
+
+.search-text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.subscribe {
+    background: url(/images/subscribe-background.jpg) no-repeat;
+    color: #FFFFFF;
+}
+
+.tel-number{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.filters {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+    background: url(/images/img_catalog/catalog-background.jpg) no-repeat;
+}
+
+.filters-heading {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 78px;
+    color: #FFFFFF;
+}
+
+.catalog-filter-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.breadcrumbs-link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.catalog-fiter_apply {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.found {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 39px;
+    color: #000000;
+}
+
+.card-name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    color: #000000;
+}
+
+.card-prise-wrapper {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    color: #333333;
+}
+
+.button-details {
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.button-favorit {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.info-rating {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.catalog-button-loadmore {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.active-pagination-link {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+}
+
+.pagination-link {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
+    background: tomato; /* фон для вида белого текста */
+}
+
+.catalog-subscribe{
+
+}
