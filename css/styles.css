@@ -3,35 +3,50 @@
     font-style: normal;
     font-weight: 400;
     src: local("PT Sans"),
-        url(/fonts/ptsans-400.woff2);
+        url("../fonts/ptsans-400.woff2") format("woff2");
     font-display: swap
 }
 
 @font-face {
     font-family: "PT Sans";
-    font-style: normal;
+    font-style: bold;
     font-weight: 700;
     src: local("PT Sans"),
-        url(/fonts/ptsans-700.woff2);
+        url("../fonts/ptsans-700.woff2") format("woff2");
     font-display: swap
 }
 
 body {
     font-family: "PT Sans", "Arial", sans-serif;
     color: #000000;
+    background-color: #fff;
 }
 
-.navigation-item {
+.navigation-link {
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
     line-height: 26px;
     text-decoration: none;
-    color: black;
+    color: #000000;
+}
+
+.navigation-search {
+    background-color: #fff;
+    background-image: url(/images/search.png);
+    background-repeat: no-repeat;
+
+}
+
+.navigation-like{
+    background-image: url(/images/like.png);
+    background-repeat: no-repeat;
 }
 
 .main-intro_welcome {
-    background: url(/images/index-background.jpg) no-repeat;
+    background-image: url(/images/index-background.jpg);
+    background-repeat: no-repeat;
+
 }
 
 .heading {
@@ -53,7 +68,7 @@ body {
 }
 
 .benefits-card {
-    background: #83B3D3;
+    background-color: #83B3D3;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -69,7 +84,7 @@ body {
 }
 
 .benefits-card-bg {
-    background: rgba(131, 179, 211, 0.12);
+    background-color: rgba(131, 179, 211, 0.12);
 }
 
 .benefits-card-textstyle{
@@ -77,11 +92,11 @@ body {
 }
 
 .benefits-cards-food{
-    background: #fff;
+    background-color: #fff;
 }
 
 .benefits-card-passbg{
-    background: rgba(131, 179, 211, 0.2);
+    background-color: rgba(131, 179, 211, 0.2);
 }
 
 .search-text{
@@ -93,8 +108,24 @@ body {
 }
 
 .subscribe {
-    background: url(/images/subscribe-background.jpg) no-repeat;
+    background-image: url(/images/subscribe-background.jpg);
+    background-repeat:no-repeat;
     color: #FFFFFF;
+}
+
+.footer-social_twitter {
+    background-image: url(/images/social-twitter.png);
+    background-repeat:no-repeat;
+}
+
+.footer-social_facebook {
+    background-image: url(/images/social-facebook.png);
+    background-repeat:no-repeat;
+}
+
+.footer-social_youtube {
+    background-image: url(/images/social-youtube.png);
+    background-repeat:no-repeat;
 }
 
 .tel-number{
@@ -104,7 +135,7 @@ body {
     line-height: 40px;
     text-align: center;
     text-decoration: none;
-    color: black;
+    color: #000000;
 }
 
 .filters {
@@ -113,7 +144,8 @@ body {
     font-size: 18px;
     line-height: 23px;
     color: #FFFFFF;
-    background: url(/images/img_catalog/catalog-background.jpg) no-repeat;
+    background-image: url(/images/img_catalog/catalog-background.jpg);
+    background-repeat: no-repeat;
 }
 
 .filters-heading {
@@ -210,7 +242,8 @@ body {
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
-    line-height: 26px;text-align: center;
+    line-height: 26px;
+    text-align: center;
     text-transform: uppercase;
     text-decoration: none;
     color: #000000;
@@ -220,11 +253,12 @@ body {
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
-    line-height: 26px;text-align: center;
+    line-height: 26px;
+    text-align: center;
     text-transform: uppercase;
     text-decoration: none;
     color: #FFFFFF;
-    background: tomato; /* фон для вида белого текста */
+    background-color: tomato; /* фон для вида белого текста */
 }
 
 .catalog-subscribe{
