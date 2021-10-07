@@ -11,7 +11,7 @@
     font-family: "PT Sans";
     font-style: bold;
     font-weight: 700;
-    src: local("PT Sans"),
+    src: local("PT Sans Bold"),
         url("../fonts/ptsans-700.woff2") format("woff2");
     font-display: swap
 }
@@ -33,20 +33,20 @@ body {
 
 .navigation-search {
     background-color: #fff;
-    background-image: url(/images/search.png);
+    background-image: url(../images/search.png);
     background-repeat: no-repeat;
 
 }
 
 .navigation-like{
-    background-image: url(/images/like.png);
+    background-image: url(../images/like.png);
     background-repeat: no-repeat;
 }
 
 .main-intro_welcome {
-    background-image: url(/images/index-background.jpg);
+    background-image: url(../images/index-background.jpg);
     background-repeat: no-repeat;
-
+    background-color: #000000;
 }
 
 .heading {
@@ -108,23 +108,23 @@ body {
 }
 
 .subscribe {
-    background-image: url(/images/subscribe-background.jpg);
+    background-image: url(../images/subscribe-background.jpg);
     background-repeat:no-repeat;
     color: #FFFFFF;
 }
 
 .footer-social_twitter {
-    background-image: url(/images/social-twitter.png);
+    background-image: url(../images/social-twitter.png);
     background-repeat:no-repeat;
 }
 
 .footer-social_facebook {
-    background-image: url(/images/social-facebook.png);
+    background-image: url(../images/social-facebook.png);
     background-repeat:no-repeat;
 }
 
 .footer-social_youtube {
-    background-image: url(/images/social-youtube.png);
+    background-image: url(../images/social-youtube.png);
     background-repeat:no-repeat;
 }
 
@@ -144,7 +144,7 @@ body {
     font-size: 18px;
     line-height: 23px;
     color: #FFFFFF;
-    background-image: url(/images/img_catalog/catalog-background.jpg);
+    background-image: url(../images/img_catalog/catalog-background.jpg);
     background-repeat: no-repeat;
 }
 
