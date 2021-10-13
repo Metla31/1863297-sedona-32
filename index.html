@@ -44,14 +44,12 @@
     <!-- main start -->
     <main class="main-index">
       <section class="main-intro">
-        <div class="main-intro_welcome">
-          <img src="./images/welcome_sedona.svg" alt="welcome" class="main-logo">
-          <div class="main-divider">
-            <img src="./images/background_divider.png" alt="divider">
-          </div>
+        <img src="./images/welcome_sedona.svg" alt="welcome" class="main-logo">
+        <div class="main-divider">
+          <img src="./images/background_divider.png" alt="divider">
         </div>
-        <div class="main-intro_description">
-          <h1 class="heading">
+        <div class="main-intro-description">
+          <h1 class="heading-intro">
             Седона — небольшой городок в Аризоне, заслуживающий большего!
           </h1>
           <p class="subtitle">
@@ -60,75 +58,70 @@
         </div>
       </section>
       <section class="benefits">
-        <h2 class="visually-hidden">Преимущества</h2>
-        <div class="benefits-cards_primary">
-          <div class="benefits-card benefits-card-textstyle">
-            <h3 class="benefits-heading">
-              Настоящий городок
-            </h3>
-            <p>— №1 —</p>
-            <p>
-              Седона — не аттракцион для туристов, там течёт своя жизнь
-            </p>
-          </div>
-          <img src="./images/photo-1.jpg" alt="Настоящий городок">
-        </div>
-        <div class="benefits-cards_secondary benefits-card-bg">
-          <img src="./images/icon-home.png" alt="Жилье">
+        <div class="benefits-card benefits-cards-primary">
           <h3 class="benefits-heading">
+            Настоящий городок
+          </h3>
+          <p class="benefits-number">— №1 —</p>
+          <p class="benefits-text-bluecard">
+            Седона — не аттракцион для туристов, там течёт своя жизнь
+          </p>
+        </div>
+        <img src="./images/photo-1.jpg" alt="Настоящий городок" class="benefits-foto-1">
+        <div class="benefits-cards-secondary benefits-card-bg">
+          <img src="./images/icon-home.png" alt="Жилье" class="card-lodging">
+          <h3 class="benefits-heading benefits-heading-subclass">
             Жильё
           </h3>
-          <p>
+          <p class="benefits-text-othercard">
             Рекомендуем пожить в настоящем мотеле, всё как в кино!
           </p>
         </div>
-        <div class="benefits-cards_secondary benefits-cards-food">
-          <img src="./images/icon-eat.png" alt="Еда">
-          <h3 class="benefits-heading">
+        <div class="benefits-cards-secondary benefits-cards-food">
+          <img src="./images/icon-eat.png" alt="Еда" class="card-foot">
+          <h3 class="benefits-heading benefits-heading-subclass">
             Еда
           </h3>
-          <p>
+          <p class="benefits-text-othercard">
             Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
           </p>
         </div>
-        <div class="benefits-cards_secondary benefits-card-bg">
-          <img src="./images/icon-souvenir.png" alt="Сувениры">
-          <h3 class="benefits-heading">
+        <div class="benefits-cards-secondary benefits-card-bg">
+          <img src="./images/icon-souvenir.png" alt="Сувениры" class="card-souvenir">
+          <h3 class="benefits-heading benefits-heading-subclass">
             Сувениры
           </h3>
-          <p>
+          <p class="benefits-text-othercard">
             Не только китайского, но и настоящего местного производства!
           </p>
         </div>
-        <div class="benefits-cards_primary">
-          <img src="./images/photo-2.jpg" alt="Мост дьявола">
-          <div class="benefits-card benefits-card-textstyle">
-            <h3 class="benefits-heading">Там есть мост дьявола</h3>
-            <p>— №2 —</p>
-            <p>
-              Да, по нему можно пройти! Если вы осмелитесь, разумеется
-            </p>
-          </div>
+        <img src="./images/photo-2.jpg" alt="Мост дьявола" class="benefits-foto-2">
+        <div class="benefits-card benefits-cards-primary benefits-card-textstyle">
+          <h3 class="benefits-heading">Там есть мост дьявола</h3>
+          <p class="benefits-number">— №2 —</p>
+          <p class="benefits-text-bluecard">
+            Да, по нему можно пройти! Если вы осмелитесь, разумеется
+          </p>
         </div>
         <div class="benefits-card benefits-card-bg">
           <h3 class="benefits-heading">Небольшая
             площадь</h3>
-          <p>— №3 —</p>
-          <p>
+          <p class="benefits-number">— №3 —</p>
+          <p class="benefits-text-othercard">
             Все достопримечательности находятся очень близко
           </p>
         </div>
         <div class="benefits-card benefits-card-passbg">
           <h3 class="benefits-heading">Красивая дорога</h3>
-          <p>— №4 —</p>
-          <p>
+          <p class="benefits-number">— №4 —</p>
+          <p class="benefits-text-othercard">
             Ехать в Седону из Лас-Вегаса совсем не скучно!
           </p>
         </div>
         <div class="benefits-card benefits-card-bg">
           <h3 class="benefits-heading">Мало туристов</h3>
-          <p>— №5 —</p>
-          <p>
+          <p class="benefits-number">— №5 —</p>
+          <p class="benefits-text-othercard">
             Большинство едет в Гранд Каньон и толпится там
           </p>
         </div>
@@ -145,9 +138,9 @@
         <p class="search-text">
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
-        <form action="#" method="POST">
-          <label for="" class="subscribe-form">
-            <input type="text">
+        <form action="#" method="POST" class="subscribe-form">
+          <label for="" >
+            <input type="text" class="subscribe-form-input">
           </label>
           <button type="submit" class="subscribe-button">Подписаться</button>
         </form>
@@ -156,17 +149,23 @@
     <!-- main end -->
     <!-- footer start -->
     <footer class="footer">
-      <div class="footer-social">
-        <a href="#" class="footer-social_twitter">
-          <span class="visually-hidden">twitter</span>
-        </a>
-        <a href="#" class="footer-social_facebook">
-          <span class="visually-hidden">facebook</span>
-        </a>
-        <a href="#" class="footer-social_youtube">
-          <span class="visually-hidden">youtube</span>
-        </a>
-      </div>
+      <ul class="footer-social">
+        <li class="footer-social-item">
+          <a href="#" class="footer-social-twitter">
+            <span class="visually-hidden">twitter</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a href="#" class="footer-social-facebook">
+            <span class="visually-hidden">facebook</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a href="#" class="footer-social-youtube">
+            <span class="visually-hidden">youtube</span>
+          </a>
+        </li>
+      </ul>
       <a href="tel:+78128121212" class="tel-number">+7 (812) 812-12-12</a>
       <img src="./images/logo_htmlacademy.png" alt="Логотип академии" class="footer-logo">
     </footer>

@@ -51,7 +51,7 @@
                 <span class="visually-hidden">Главная</span>
                 <img src="./images/img_catalog/home-ico.svg" alt="На главную">
               </a>
-            <li class="bradcrumbs-item">
+            <li class="breadcrumbs-item">
               <a href="#" class="braedcrumbs-link">
                 <img src="./images/img_catalog/nav-arrow.svg" alt="Стрека перехода">
               </a>
@@ -62,19 +62,19 @@
             </li>
           </ul>
           <form action="https://echo.htmlacademy.ru/" method="GET" class="catalog-filter">
-            <fieldset class="catalog-filter_group">
+            <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Инфраструктура:</legend>
                 <label><input type="checkbox" name="infrastructure" value="pool" checked>Бассейн</label>
                 <label><input type="checkbox" name="infrastructure" value="parking" checked>Парковка</label>
                 <label><input type="checkbox" name="infrastructure" value="wifi">Wi-Fi</label>
             </fieldset>
-            <fieldset class="catalog-filter_group">
+            <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Тип жилья:</legend>
               <label><input type="radio" name="type" value="hotel" checked>Гостиница</label>
                 <label><input type="radio" name="type" value="motel">Мотель</label>
                 <label><input type="radio" name="type" value="apartments">Апартаменты</label>
             </fieldset>
-            <fieldset class="catalog-filter_group">
+            <fieldset class="catalog-filter-prise">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
               <label class="catalog-filter-label">
                 <input class="catalog-filter-input" type="number" name="min-price">
@@ -101,13 +101,13 @@
               <option>Сначала дешевые</option>
             </select>
             <div class="bottom-sorting-wrapper">
-              <button type="button" class="sorting-listmode">Плитка
+              <button type="button" class="sorting-listmode">
                 <img src="./images/img_catalog/mode-tile.png" alt="обычный режим">
               </button>
-              <button type="button" class="sorting-listmode">Карточка
+              <button type="button" class="sorting-listmode">
                 <img src="./images/img_catalog/mode-slide.png" alt="режим слайдов">
               </button>
-              <button type="button" class="sorting-listmode">Список.
+              <button type="button" class="sorting-listmode">
                 <img src="./images/img_catalog/mode-list.png" alt="список режимов">
               </button>
             </div>
@@ -125,7 +125,7 @@
                 <button type="button" class="button-favorit">В избранное</button>
               </div>
               <div class="rating">
-                <img src="./images/img_catalog/4stars.png" alt="4 звезды">
+                <img src="./images/img_catalog/4stars.png" alt="4 звезды" class="rating-picture-4">
                 <p class="info-rating">Рейтинг: 8,5</p>
                </div>
             </article>
@@ -141,7 +141,7 @@
                 <button type="button" class="button-favorit">В избранное</button>
               </div>
               <div class="rating">
-                <img src="./images/img_catalog/3stars.png" alt="3 звезды">
+                <img src="./images/img_catalog/3stars.png" alt="3 звезды" class="rating-picture-3">
                 <p class="info-rating">Рейтинг: 8,9</p>
                </div>
             </article>
@@ -157,7 +157,7 @@
                 <button type="button" class="button-favorit">В избранное</button>
               </div>
               <div class="rating">
-                <img src="./images/img_catalog/2stars.png" alt="2 звезды">
+                <img src="./images/img_catalog/2stars.png" alt="2 звезды" class="rating-picture-2">
                 <p class="info-rating">Рейтинг: 9,2</p>
                </div>
             </article>
@@ -173,28 +173,28 @@
                 <button type="button" class="button-favorit">В избранное</button>
               </div>
               <div class="rating">
-                <img src="./images/img_catalog/2stars.png" alt="2 звезды">
+                <img src="./images/img_catalog/2stars.png" alt="2 звезды" class="rating-picture-2">
                 <p class="info-rating">Рейтинг: 9,2</p>
                </div>
             </article>
             <button type="button" class="catalog-button-loadmore">Загрузить еще</button>
-          </div>
-          <div class="pagination">
-            <div class="paginations-link">
-              <a href="#" class="active-pagination-link">1</a>
-              <a href="#" class="pagination-link">2</a>
-              <a href="#" class="pagination-link">3</a>
-              <a href="#" class="pagination-link">4</a>
-              <a href="#" class="pagination-link">...</a>
-              <a href="#" class="pagination-link">10</a>
-            </div>
-            <div class="pagination-controls">
-              <p>Гостиниц на странице:</p>
-              <select class="pagination-select">
-                <option>4</option>
-                <option>8</option>
-                <option>12</option>
-              </select>
+            <div class="pagination">
+              <div class="paginations-link">
+                <a href="#" class="pagination-link">1</a>
+                <a href="#" class="pagination-link">2</a>
+                <a href="#" class="pagination-link">3</a>
+                <a href="#" class="pagination-link">4</a>
+                <a href="#" class="pagination-link">...</a>
+                <a href="#" class="pagination-link">10</a>
+              </div>
+              <div class="pagination-controls">
+                <p class="pagination-text">Гостиниц на странице:</p>
+                <select class="pagination-select">
+                  <option>4</option>
+                  <option>8</option>
+                  <option>12</option>
+                </select>
+              </div>
             </div>
           </div>
         </section>
@@ -204,8 +204,8 @@
             Только полезная информация и никакого спама, честное бойскаутское!
           </p>
           <form action="#" method="POST" class="subscribe-form">
-            <label for="" class="subscribe-form-lebel">
-              <input type="text">
+            <label for="">
+              <input type="text" class="subscribe-form-input">
             </label>
             <button type="submit" class="subscribe-button">Подписаться</button>
           </form>
