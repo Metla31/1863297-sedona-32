@@ -36,6 +36,16 @@ main {
     flex-grow: 1;
 }
 
+.conteiner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.title-wrapper {
+    width: 720px;
+    margin: 0 auto;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -49,9 +59,6 @@ main {
 
 .navigation {
     display: flex;
-    width: 1200px;
-    height: 65px;
-    margin: 0 auto;
 }
 
 .navigation-list {
@@ -60,12 +67,11 @@ main {
     width: 410px;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
     list-style-type: none;
 }
 
 .navigation-item {
-    margin: 0 auto;
     text-align: center;
 }
 
@@ -121,17 +127,14 @@ main {
     color: #FFFFFF;
 }
 
+
+
 .main-index {
     display: flex;
     flex-direction: column;
-    width: 1200px;
-    margin: 0 auto;
 }
 
 .main-intro {
-    width: 1200px;
-    height: 767px;
-    margin: 0 auto;
     background-image: url(../images/index-background.jpg);
     background-repeat: no-repeat;
     background-color: #FFFFFF;
@@ -147,8 +150,6 @@ main {
 }
 
 .main-divider {
-    width: 1200px;
-    height: 57px;
     margin-top: 31px;
 }
 
@@ -160,6 +161,8 @@ main {
 }
 
 .heading-intro {
+    padding-top: 63px;
+    padding-bottom: 23px;
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
@@ -169,6 +172,8 @@ main {
 }
 
 .subtitle {
+    margin: 0 auto;
+    padding-bottom: 80px;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
@@ -178,13 +183,10 @@ main {
 }
 
 .benefits {
-    width: 1200px;
-    height: 1535px;
     display: flex;
     flex-wrap: wrap;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    margin: 0 auto;
 }
 
 .benefits-card {
@@ -290,12 +292,6 @@ main {
     background-color: rgba(131, 179, 211, 0.2);
 }
 
-
-.search {
-    width: 1200px;
-    height: 417px;
-}
-
 .heading {
     width: 720px;
     height: 50px;
@@ -307,6 +303,7 @@ main {
     line-height: 36px;
     text-align: center;
 }
+
 
 .search-text {
     width: 720px;
@@ -325,8 +322,11 @@ main {
     width: 565px;
     height: 60px;
     display: block;
+    box-sizing: border-box;
     margin: 0 auto;
+    margin-bottom: 91px;
     background: #756257;
+    border: 0;
     border-radius: 10px;
     font-style: normal;
     font-weight: bold;
@@ -338,7 +338,6 @@ main {
 
 .subscribe {
     width: 1200px;
-    height: 411px;
     background-image: url(../images/subscribe-background.jpg);
     background-repeat:no-repeat;
     color: #FFFFFF;
@@ -349,11 +348,14 @@ main {
     width: 800px;
     height: 60px;
     margin: 0 auto;
+    margin-bottom: 91px;
 }
 
 .subscribe-form-input {
+    box-sizing: border-box;
     width: 600px;
     height: 60px;
+    border: 0;
     background: #F2F2F2;
     border-radius: 0px 10px 10px 0px;
     transform: matrix(-1, 0, 0, 1, 0, 0);
@@ -363,6 +365,7 @@ main {
     width: 200px;
     height: 60px;
     background: #83B3D3;
+    border: 0;
     border-radius: 0px 10px 10px 0px;
     font-style: normal;
     font-weight: bold;
@@ -375,7 +378,6 @@ main {
 .footer {
     display: flex;
     width: 1200px;
-    height: 120px;
     margin: 0 auto;
     justify-content: space-around;
     text-align: center;
@@ -383,7 +385,7 @@ main {
 
 .footer-social {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     list-style-type: none;
     width: 120px;
@@ -393,24 +395,30 @@ main {
 }
 
 .footer-social-item {
-    display: block;
-    width: 20px;
-    height: 20px;
     margin-top: 13px;
     margin-bottom: 23px;
 }
 
 .footer-social-twitter {
+    display: block;
+    width: 18px;
+    height: 15px;
     background-image: url(../images/social-twitter.png);
     background-repeat: no-repeat;
 }
 
 .footer-social-facebook {
+    display: block;
+    width: 10px;
+    height: 18px;
     background-image: url(../images/social-facebook.png);
     background-repeat: no-repeat;
 }
 
 .footer-social-youtube {
+    display: block;
+    width: 20px;
+    height: 16px;
     background-image: url(../images/social-youtube.png);
     background-repeat: no-repeat;
 }
@@ -439,8 +447,8 @@ main {
 
 .filters {
     width: 1200px;
-    height: 408px;
     margin: 0 auto;
+    padding-bottom: 83px;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -482,7 +490,6 @@ main {
 
 .catalog {
     width: 1200px;
-    height: 1090px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -580,7 +587,6 @@ main {
     display: flex;
     justify-content: space-between;
     width: 1056px;
-    height: 181px;
     border-top: 1px solid #E6E6E6;
     border-bottom: 1px solid #E6E6E6;
 }
@@ -648,7 +654,6 @@ main {
 .rating {
     display: block;
     width: 160px;
-    height: 120px;
     padding-top: 30px;
     text-align:center ;
 }
@@ -711,7 +716,7 @@ main {
     display: flex;
     justify-content: space-between;
     width: 1056px;
-    height: 115px;
+    padding: 31px 0;
     border-top: 1px solid #E6E6E6;
 }
 
@@ -721,30 +726,36 @@ main {
 
 }
 
-.paginations-link {
+.pagination-list {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
     margin: auto 0;
 }
 
+.pagination-item {
+    list-style-type: none;
+    margin-right: 8px;
+}
+
 .pagination-link {
-    display: block;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
     width: 55px;
     height: 55px;
-    margin-right: 7px;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
     line-height: 26px;
-    text-transform: uppercase;
     text-decoration: none;
     color: #FFFFFF;
     background: #83B3D3;
     border-radius: 4px;
 }
 
-.pagination-link:last-child {
+.pagination-item:last-child {
     margin-right: 0px;
 }
 

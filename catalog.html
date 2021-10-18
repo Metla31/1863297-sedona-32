@@ -7,7 +7,7 @@
 </head>
 <body>
     <!-- Header start -->
-    <header class="page-header">
+    <header class="page-header conteiner">
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -42,7 +42,7 @@
     </header>
       <!-- Header end -->
       <!-- main start -->
-    <main class="main-index">
+    <main class="main-index conteiner">
         <section class="filters">
           <h1 class="filters-heading">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
@@ -179,14 +179,26 @@
             </article>
             <button type="button" class="catalog-button-loadmore">Загрузить еще</button>
             <div class="pagination">
-              <div class="paginations-link">
-                <a href="#" class="pagination-link">1</a>
-                <a href="#" class="pagination-link">2</a>
-                <a href="#" class="pagination-link">3</a>
-                <a href="#" class="pagination-link">4</a>
-                <a href="#" class="pagination-link">...</a>
-                <a href="#" class="pagination-link">10</a>
-              </div>
+              <ul class="pagination-list">
+                <li class="pagination-item">
+                  <a href="#" class="pagination-link">1</a>
+                </li>
+                <li class="pagination-item">
+                  <a href="#" class="pagination-link">2</a>
+                </li>
+                <li class="pagination-item">
+                  <a href="#" class="pagination-link">3</a>
+                </li>
+                <li class="pagination-item">
+                  <a href="#" class="pagination-link">4</a>
+                </li>
+                <li class="pagination-item">
+                  <a href="#" class="pagination-link">...</a>
+                </li>
+                <li class="pagination-item">
+                  <a href="#" class="pagination-link">10</a>
+                </li>
+              </ul>
               <div class="pagination-controls">
                 <p class="pagination-text">Гостиниц на странице:</p>
                 <select class="pagination-select">
@@ -213,18 +225,24 @@
     </main>
     <!-- main end -->
     <!-- footer start -->
-    <footer class="footer">
-      <div class="footer-social">
-        <a href="#" class="footer-social_twitter">
-          <span class="visually-hidden">twitter</span>
-        </a>
-        <a href="#" class="footer-social_facebook">
-          <span class="visually-hidden">facebook</span>
-        </a>
-        <a href="#" class="footer-social_youtube">
-          <span class="visually-hidden">youtube</span>
-        </a>
-      </div>
+    <footer class="footer conteiner">
+      <ul class="footer-social">
+        <li class="footer-social-item">
+          <a href="#" class="footer-social-twitter">
+            <span class="visually-hidden">twitter</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a href="#" class="footer-social-facebook">
+            <span class="visually-hidden">facebook</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a href="#" class="footer-social-youtube">
+            <span class="visually-hidden">youtube</span>
+          </a>
+        </li>
+      </ul>
       <a href="tel:+78128121212" class="tel-number">+7 (812) 812-12-12</a>
       <img src="./images/logo_htmlacademy.png" alt="Логотип академии" class="footer-logo">
     </footer>
