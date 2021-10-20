@@ -7,7 +7,7 @@
 </head>
 <body>
     <!-- Header start -->
-    <header class="page-header conteiner">
+    <header class="page-header container">
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -42,7 +42,7 @@
     </header>
       <!-- Header end -->
       <!-- main start -->
-    <main class="main-index conteiner">
+    <main class="main-index container">
         <section class="filters">
           <h1 class="filters-heading">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
@@ -64,30 +64,50 @@
           <form action="https://echo.htmlacademy.ru/" method="GET" class="catalog-filter">
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Инфраструктура:</legend>
-                <label><input type="checkbox" name="infrastructure" value="pool" checked>Бассейн</label>
-                <label><input type="checkbox" name="infrastructure" value="parking" checked>Парковка</label>
-                <label><input type="checkbox" name="infrastructure" value="wifi">Wi-Fi</label>
+                <label class="catalog-title-label">
+                  <input type="checkbox" name="infrastructure" value="pool" checked>
+                  Бассейн
+                </label>
+                <label class="catalog-title-label">
+                  <input type="checkbox" name="infrastructure" value="parking" checked>
+                  Парковка
+                </label>
+                <label class="catalog-title-label">
+                  <input type="checkbox" name="infrastructure" value="wifi">
+                  Wi-Fi
+                </label>
             </fieldset>
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Тип жилья:</legend>
-              <label><input type="radio" name="type" value="hotel" checked>Гостиница</label>
-                <label><input type="radio" name="type" value="motel">Мотель</label>
-                <label><input type="radio" name="type" value="apartments">Апартаменты</label>
+              <label class="catalog-title-label">
+                <input type="radio" name="type" value="hotel" checked>
+                Гостиница
+              </label>
+                <label class="catalog-title-label">
+                  <input type="radio" name="type" value="motel">
+                  Мотель
+                </label>
+                <label class="catalog-title-label">
+                  <input type="radio" name="type" value="apartments">
+                  Апартаменты
+                </label>
             </fieldset>
             <fieldset class="catalog-filter-prise">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
               <label class="catalog-filter-label">
-                <input class="catalog-filter-input" type="number" name="min-price">
+                <label for="">
+                  <input class="catalog-filter-input" type="number" name="min-price">
+                </label>
+                <label for="">
+                  <input class="catalog-filter-input" type="number" name="max-price">
+                </label>
+                <button class="range-toggle toggle-min" type="button">
+                  <span class="visually-hidden">Изменить минимальную цену.</span>
+                </button>
+                <button class="range-toggle toggle-max" type="button">
+                  <span class="visually-hidden">Изменить максимальную цену.</span>
+                </button>
               </label>
-              <label class="catalog-filter-label">
-                <input class="catalog-filter-input" type="number" name="max-price">
-              </label>
-              <button class="range-toggle toggle-min" type="button">
-                <span class="visually-hidden">Изменить минимальную цену.</span>
-              </button>
-              <button class="range-toggle toggle-max" type="button">
-                <span class="visually-hidden">Изменить максимальную цену.</span>
-              </button>
               <button type="button" class="catalog-fiter_apply">Применить</button>
               <button type="reset" class="catalog-fiter_throw">Сбросить</button>
             </fieldset>
@@ -225,7 +245,7 @@
     </main>
     <!-- main end -->
     <!-- footer start -->
-    <footer class="footer conteiner">
+    <footer class="footer container">
       <ul class="footer-social">
         <li class="footer-social-item">
           <a href="#" class="footer-social-twitter">
