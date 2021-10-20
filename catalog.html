@@ -11,17 +11,17 @@
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a href="#" class="navigation-link">Главная</a>
+            <a href="./index.html" class="navigation-link">Главная</a>
           </li>
           <li class="navigation-item">
             <a href="#" class="navigation-link">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a href="#" class="navigation-link">Гостиницы</a>
+            <a href="./catalog.html" class="navigation-link">Гостиницы</a>
           </li>
         </ul>
         <a href="./index.html" class="header-logo">
-          <img src="./images/sedona_logo.png" alt="Логотип">
+          <img src="./images/sedona_logo.png" alt="Логотип" class="header-logo-img">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item navigation-user">
@@ -95,11 +95,11 @@
             <fieldset class="catalog-filter-prise">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
               <label class="catalog-filter-label">
+                <input class="catalog-filter-input" type="number" name="min-price">
                 <label for="">
-                  <input class="catalog-filter-input" type="number" name="min-price">
                 </label>
+                <input class="catalog-filter-input" type="number" name="max-price">
                 <label for="">
-                  <input class="catalog-filter-input" type="number" name="max-price">
                 </label>
                 <button class="range-toggle toggle-min" type="button">
                   <span class="visually-hidden">Изменить минимальную цену.</span>
@@ -137,10 +137,8 @@
               <img src="./images/img_catalog/Amara.jpg" alt="Картинка отеля" class="card-picture">
               <div class="card-info">
                 <h3 class="card-name">Amara Resort & Spa</h3>
-                <div class="card-prise-wrapper">
-                  <p class="card-type">Гостиница</p>
-                  <p class="card-price">От 4000 ₽</p>
-                </div>
+                <p class="card-type">Гостиница</p>
+                <p class="card-price">От 4000 ₽</p>
                 <button type="button" class="button-details">подробнее</button>
                 <button type="button" class="button-favorit">В избранное</button>
               </div>
@@ -153,10 +151,8 @@
               <img src="./images/img_catalog/Desert.jpg" alt="Картинка отеля" class="card-picture">
               <div class="card-info">
                 <h3 class="card-name">Desert Quail Inn</h3>
-                <div class="card-prise-wrapper">
-                  <p class="card-type">Мотель</p>
-                  <p class="card-price">От 3000 ₽</p>
-                </div>
+                <p class="card-type">Мотель</p>
+                <p class="card-price">От 3000 ₽</p>
                 <button type="button" class="button-details">подробнее</button>
                 <button type="button" class="button-favorit">В избранное</button>
               </div>
@@ -169,10 +165,8 @@
               <img src="./images/img_catalog/Villas.jpg" alt="Картинка отеля" class="card-picture">
               <div class="card-info">
                 <h3 class="card-name">Villas at Poco Diablo</h3>
-                <div class="card-prise-wrapper">
-                  <p class="card-type">Апартаменты</p>
-                  <p class="card-price">От 2000 ₽</p>
-                </div>
+                <p class="card-type">Апартаменты</p>
+                <p class="card-price">От 2000 ₽</p>
                 <button type="button" class="button-details">подробнее</button>
                 <button type="button" class="button-favorit">В избранное</button>
               </div>
@@ -185,10 +179,8 @@
               <img src="./images/img_catalog/GreenTree.jpg" alt="Картинка отеля" class="card-picture">
               <div class="card-info">
                 <h3 class="card-name">GreenTree Inn</h3>
-                <div class="card-prise-wrapper">
-                  <p class="card-type">Гостиница</p>
-                  <p class="card-price">От 3000 ₽</p>
-                </div>
+                <p class="card-type">Гостиница</p>
+                <p class="card-price">От 3000 ₽</p>
                 <button type="button" class="button-details">подробнее</button>
                 <button type="button" class="button-favorit">В избранное</button>
               </div>

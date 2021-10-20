@@ -36,7 +36,7 @@ main {
     flex-grow: 1;
 }
 
-.conteiner {
+.container {
     width: 1200px;
     margin: 0 auto;
 }
@@ -89,7 +89,13 @@ main {
 }
 
 .header-logo {
+    position: relative;
     margin: 0 auto;
+    width: 138px;
+}
+
+.header-logo-img {
+    position: absolute;
 }
 
 .navigation-search {
@@ -626,13 +632,17 @@ main {
 }
 
 .card-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 8px;
+    align-self: start;
     width: 320px;
-    height: 120px;
     padding-top: 30px;
     padding-right: 361px;
 }
 
 .card-name {
+    grid-column: 1 / -1;
     margin: 0px;
     font-style: normal;
     font-weight: bold;
@@ -641,25 +651,17 @@ main {
     color: #000000;
 }
 
-.card-prise-wrapper {
-    display: flex;
-    width: 235px;
-    height: 23px;
-    margin-bottom: 31px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 23px;
-    color: #333333;
-}
 
 .card-type {
+    justify-items: start;
     margin: 0 auto;
-    padding-right: 78px;
+    padding-bottom: 30px;
 }
 
 .card-price {
+    justify-items: start;
     margin: 0 auto;
+    padding-bottom: 30px;
 }
 
 .button-details {
