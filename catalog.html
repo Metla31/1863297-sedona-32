@@ -95,12 +95,14 @@
             <fieldset class="catalog-filter-prise">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
               <label class="catalog-filter-label">
-                <input class="catalog-filter-input" type="number" name="min-price">
-                <label for="">
-                </label>
-                <input class="catalog-filter-input" type="number" name="max-price">
-                <label for="">
-                </label>
+                <div class="filter-label-wrapper">
+                  <label for="">
+                    <input class="filter-input-min" type="number" name="min-price">
+                  </label>
+                  <label for="">
+                    <input class="filter-input-max" type="number" name="max-price">
+                  </label>
+                </div>
                 <button class="range-toggle toggle-min" type="button">
                   <span class="visually-hidden">Изменить минимальную цену.</span>
                 </button>
@@ -108,8 +110,8 @@
                   <span class="visually-hidden">Изменить максимальную цену.</span>
                 </button>
               </label>
-              <button type="button" class="catalog-fiter_apply">Применить</button>
-              <button type="reset" class="catalog-fiter_throw">Сбросить</button>
+              <button type="button" class="catalog-fiter-apply">Применить</button>
+              <button type="reset" class="catalog-fiter-throw">Сбросить</button>
             </fieldset>
           </form>
         </section>
@@ -154,7 +156,7 @@
                 <p class="card-type">Мотель</p>
                 <p class="card-price">От 3000 ₽</p>
                 <button type="button" class="button-details">подробнее</button>
-                <button type="button" class="button-favorit">В избранное</button>
+                <button type="button" class="button-favorit-active">В избранном</button>
               </div>
               <div class="rating">
                 <img src="./images/img_catalog/3stars.png" alt="3 звезды" class="rating-picture-3">
@@ -193,7 +195,7 @@
             <div class="pagination">
               <ul class="pagination-list">
                 <li class="pagination-item">
-                  <a href="#" class="pagination-link">1</a>
+                  <a href="#" class="pagination-link-active">1</a>
                 </li>
                 <li class="pagination-item">
                   <a href="#" class="pagination-link">2</a>
