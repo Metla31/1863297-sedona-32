@@ -5,9 +5,9 @@
     <title>Каталог Седона</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body>
+<body class="container">
     <!-- Header start -->
-    <header class="page-header container">
+    <header class="page-header">
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -42,7 +42,7 @@
     </header>
       <!-- Header end -->
       <!-- main start -->
-    <main class="main-index container">
+    <main class="main-index">
         <section class="filters">
           <h1 class="filters-heading">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
@@ -65,53 +65,67 @@
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Инфраструктура:</legend>
                 <label class="catalog-title-label">
-                  <input type="checkbox" name="infrastructure" value="pool" checked>
-                  Бассейн
+                  <input class="visually-hidden" type="checkbox" name="pool" checked>
+                  <span class="control-mark"></span>
+                  <span class="control-label">Бассейн</span>
                 </label>
                 <label class="catalog-title-label">
-                  <input type="checkbox" name="infrastructure" value="parking" checked>
-                  Парковка
+                  <input class="visually-hidden" type="checkbox" name="parking" checked>
+                  <span class="control-mark"></span>
+                  <span class="control-label">Парковка</span>
                 </label>
                 <label class="catalog-title-label">
-                  <input type="checkbox" name="infrastructure" value="wifi">
-                  Wi-Fi
+                  <input class="visually-hidden" type="checkbox" name="wifi">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Wi-Fi</span>
                 </label>
             </fieldset>
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Тип жилья:</legend>
               <label class="catalog-title-label">
-                <input type="radio" name="type" value="hotel" checked>
-                Гостиница
+                <input class="visually-hidden" type="radio" name="hotel" checked>
+                <span class="control-mark-radio"></span>
+                <span class="control-label">Гостиница</span>
               </label>
                 <label class="catalog-title-label">
-                  <input type="radio" name="type" value="motel">
-                  Мотель
+                  <input class="visually-hidden" type="radio" name="motel">
+                  <span class="control-mark-radio"></span>
+                  <span class="control-label">Мотель</span>
                 </label>
                 <label class="catalog-title-label">
-                  <input type="radio" name="type" value="apartments">
-                  Апартаменты
+                  <input class="visually-hidden" type="radio" name="apartments">
+                  <span class="control-mark-radio"></span>
+                  <span class="control-label">Апартаменты</span>
                 </label>
             </fieldset>
             <fieldset class="catalog-filter-prise">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-              <label class="catalog-filter-label">
-                <div class="filter-label-wrapper">
-                  <label for="">
-                    <input class="filter-input-min" type="number" name="min-price">
-                  </label>
-                  <label for="">
-                    <input class="filter-input-max" type="number" name="max-price">
-                  </label>
+                <div class="filter-prise-wrapper">
+                  <div class="filter-label-wrapper">
+                    <label class="catalog-filter-label" for="input-min">
+                      <input id="input-min" class="filter-input-min" type="number" value="0" name="min-price">
+                    </label>
+                    <label class="catalog-filter-label" for="input-max">
+                      <input id="input-max" class="filter-input-max" type="number" value="9000" name="max-price">
+                    </label>
+                  </div>
+                  <div class="range">
+                    <div class="range-scale">
+                      <div class="range-bar" style="width: 227px;">
+                        <button class="range-toggle toggle-min" type="button">
+                          <span class="visually-hidden">Изменить минимальную цену.</span>
+                        </button>
+                        <button class="range-toggle toggle-max" type="button">
+                          <span class="visually-hidden">Изменить максимальную цену.</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <button class="range-toggle toggle-min" type="button">
-                  <span class="visually-hidden">Изменить минимальную цену.</span>
-                </button>
-                <button class="range-toggle toggle-max" type="button">
-                  <span class="visually-hidden">Изменить максимальную цену.</span>
-                </button>
-              </label>
-              <button type="button" class="catalog-fiter-apply">Применить</button>
-              <button type="reset" class="catalog-fiter-throw">Сбросить</button>
+                <div class="filter-button-wrapper">
+                  <button type="button" class="catalog-fiter-apply">Применить</button>
+                  <button type="reset" class="catalog-fiter-throw">Сбросить</button>
+                </div>
             </fieldset>
           </form>
         </section>
@@ -229,9 +243,9 @@
           <p class="search-text">
             Только полезная информация и никакого спама, честное бойскаутское!
           </p>
-          <form action="#" method="POST" class="subscribe-form">
-            <label for="">
-              <input type="text" class="subscribe-form-input">
+          <form action="https:/echo.htmlacademy.ru/" method="POST" class="subscribe-form">
+            <label for="subscribe">
+              <input id="subscribe" placeholder="Ваш e-mail" type="email" class="subscribe-form-input" required>
             </label>
             <button type="submit" class="subscribe-button">Подписаться</button>
           </form>
@@ -242,23 +256,26 @@
     <footer class="footer container">
       <ul class="footer-social">
         <li class="footer-social-item">
-          <a href="#" class="footer-social-twitter">
+          <a href="https://twitter.com/" class="footer-social-twitter">
             <span class="visually-hidden">twitter</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a href="#" class="footer-social-facebook">
+          <a href="https://www.facebook.com/" class="footer-social-facebook">
             <span class="visually-hidden">facebook</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a href="#" class="footer-social-youtube">
+          <a href="https://www.youtube.com/" class="footer-social-youtube">
             <span class="visually-hidden">youtube</span>
           </a>
         </li>
       </ul>
       <a href="tel:+78128121212" class="tel-number">+7 (812) 812-12-12</a>
-      <img src="./images/logo_htmlacademy.png" alt="Логотип академии" class="footer-logo">
+      <a href="https://htmlacademy.ru/" class="footer-logo-link">
+        <img src="./images/logo_htmlacademy.png" alt="Логотип академии" class="footer-logo" width="115px"
+        height="35px">
+      </a>
     </footer>
     <!-- footer end -->
 </body>

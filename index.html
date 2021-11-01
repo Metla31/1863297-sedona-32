@@ -11,7 +11,7 @@
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a href="./index.html" class="navigation-link">Главная</a>
+            <a class="navigation-link">Главная</a>
           </li>
           <li class="navigation-item">
             <a href="#" class="navigation-link">О Седоне</a>
@@ -21,7 +21,8 @@
           </li>
         </ul>
         <a href="./index.html" class="header-logo">
-          <img src="./images/sedona_logo.png" alt="Логотип" class="header-logo-img">
+          <img src="./images/sedona_logo.png" alt="Логотип" class="header-logo-img" width="138px"
+          height="70px">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item navigation-user">
@@ -65,9 +66,11 @@
             Седона — не аттракцион для туристов, там течёт своя жизнь
           </p>
         </div>
-        <img src="./images/photo-1.jpg" alt="Настоящий городок" class="benefits-foto-1">
+        <img src="./images/photo-1.jpg" alt="Настоящий городок" class="benefits-foto-1" width="800px"
+        height="385px">
         <div class="benefits-cards-secondary benefits-card-bg">
-          <img src="./images/icon-home.png" alt="Жилье" class="card-lodging">
+          <img src="./images/icon-home.png" alt="Жилье" class="card-lodging" width="75px"
+          height="72px">
           <h3 class="benefits-heading benefits-heading-subclass">
             Жильё
           </h3>
@@ -76,7 +79,8 @@
           </p>
         </div>
         <div class="benefits-cards-secondary benefits-cards-food">
-          <img src="./images/icon-eat.png" alt="Еда" class="card-foot">
+          <img src="./images/icon-eat.png" alt="Еда" class="card-foot" width="74px"
+          height="70px">
           <h3 class="benefits-heading benefits-heading-subclass">
             Еда
           </h3>
@@ -85,7 +89,8 @@
           </p>
         </div>
         <div class="benefits-cards-secondary benefits-card-bg">
-          <img src="./images/icon-souvenir.png" alt="Сувениры" class="card-souvenir">
+          <img src="./images/icon-souvenir.png" alt="Сувениры" class="card-souvenir" width="65px"
+          height="76px">
           <h3 class="benefits-heading benefits-heading-subclass">
             Сувениры
           </h3>
@@ -93,7 +98,8 @@
             Не только китайского, но и настоящего местного производства!
           </p>
         </div>
-        <img src="./images/photo-2.jpg" alt="Мост дьявола" class="benefits-foto-2">
+        <img src="./images/photo-2.jpg" alt="Мост дьявола" class="benefits-foto-2" width="800px"
+        height="385px">
         <div class="benefits-card benefits-cards-primary benefits-card-textstyle">
           <h3 class="benefits-heading">Там есть мост дьявола</h3>
           <p class="benefits-number">— №2 —</p>
@@ -129,16 +135,16 @@
         <p class="search-text">
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <button type="button" class="search-hotel">Поиск гостиницы в седоне</button>
+        <a href="./catalog.html" class="search-hotel">Поиск гостиницы в седоне</a>
       </section>
       <section class="subscribe">
         <h2 class="heading">Подпишитесь на рассылку</h2>
         <p class="search-text">
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
-        <form action="#" method="POST" class="subscribe-form">
-          <label for="" >
-            <input type="text" class="subscribe-form-input">
+        <form action="https:/echo.htmlacademy.ru/" method="POST" class="subscribe-form">
+          <label for="subscribe" >
+            <input id="subscribe" placeholder="Ваш e-mail" type="email" class="subscribe-form-input" required>
           </label>
           <button type="submit" class="subscribe-button">Подписаться</button>
         </form>
@@ -149,23 +155,26 @@
     <footer class="footer container">
       <ul class="footer-social">
         <li class="footer-social-item">
-          <a href="#" class="footer-social-twitter">
+          <a href="https://twitter.com/" class="footer-social-twitter">
             <span class="visually-hidden">twitter</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a href="#" class="footer-social-facebook">
+          <a href="https://www.facebook.com/" class="footer-social-facebook">
             <span class="visually-hidden">facebook</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a href="#" class="footer-social-youtube">
+          <a href="https://www.youtube.com/" class="footer-social-youtube">
             <span class="visually-hidden">youtube</span>
           </a>
         </li>
       </ul>
       <a href="tel:+78128121212" class="tel-number">+7 (812) 812-12-12</a>
-      <img src="./images/logo_htmlacademy.png" alt="Логотип академии" class="footer-logo">
+      <a href="https://htmlacademy.ru/" class="footer-logo-link">
+        <img src="./images/logo_htmlacademy.png" alt="Логотип академии" class="footer-logo" width="115px"
+        height="35px">
+      </a>
     </footer>
     <!-- footer end -->
   </body>
