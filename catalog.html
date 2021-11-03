@@ -65,17 +65,17 @@
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Инфраструктура:</legend>
                 <label class="catalog-title-label">
-                  <input class="visually-hidden" type="checkbox" name="pool" checked>
+                  <input class="visually-hidden" type="checkbox" name="checkbox" value="pool" checked>
                   <span class="control-mark"></span>
                   <span class="control-label">Бассейн</span>
                 </label>
                 <label class="catalog-title-label">
-                  <input class="visually-hidden" type="checkbox" name="parking" checked>
+                  <input class="visually-hidden" type="checkbox" name="checkbox" value="parking" checked>
                   <span class="control-mark"></span>
                   <span class="control-label">Парковка</span>
                 </label>
                 <label class="catalog-title-label">
-                  <input class="visually-hidden" type="checkbox" name="wifi">
+                  <input class="visually-hidden" type="checkbox" name="checkbox" value="wifi">
                   <span class="control-mark"></span>
                   <span class="control-label">Wi-Fi</span>
                 </label>
@@ -83,17 +83,17 @@
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Тип жилья:</legend>
               <label class="catalog-title-label">
-                <input class="visually-hidden" type="radio" name="hotel" checked>
+                <input class="visually-hidden radio" type="radio" name="appartment-type" value="hotel" checked>
                 <span class="control-mark-radio"></span>
                 <span class="control-label">Гостиница</span>
               </label>
                 <label class="catalog-title-label">
-                  <input class="visually-hidden" type="radio" name="motel">
+                  <input class="visually-hidden radio" type="radio" name="appartment-type" value="motel">
                   <span class="control-mark-radio"></span>
                   <span class="control-label">Мотель</span>
                 </label>
                 <label class="catalog-title-label">
-                  <input class="visually-hidden" type="radio" name="apartments">
+                  <input class="visually-hidden radio" type="radio" name="appartment-type" value="apartments">
                   <span class="control-mark-radio"></span>
                   <span class="control-label">Апартаменты</span>
                 </label>
@@ -104,9 +104,11 @@
                   <div class="filter-label-wrapper">
                     <label class="catalog-filter-label" for="input-min">
                       <input id="input-min" class="filter-input-min" type="number" value="0" name="min-price">
+                      <span class="price-label">от</span>
                     </label>
                     <label class="catalog-filter-label" for="input-max">
                       <input id="input-max" class="filter-input-max" type="number" value="9000" name="max-price">
+                      <span class="price-label">до</span>
                     </label>
                   </div>
                   <div class="range">
@@ -123,7 +125,7 @@
                   </div>
                 </div>
                 <div class="filter-button-wrapper">
-                  <button type="button" class="catalog-fiter-apply">Применить</button>
+                  <button type="submit" class="catalog-fiter-apply">Применить</button>
                   <button type="reset" class="catalog-fiter-throw">Сбросить</button>
                 </div>
             </fieldset>
@@ -256,17 +258,20 @@
     <footer class="footer container">
       <ul class="footer-social">
         <li class="footer-social-item">
-          <a href="https://twitter.com/" class="footer-social-twitter">
+          <a href="#" class="footer-social-href">
+            <img src="./images/social-twitter.png" alt="twitter">
             <span class="visually-hidden">twitter</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a href="https://www.facebook.com/" class="footer-social-facebook">
+          <a href="#" class="footer-social-href">
+            <img src="./images/social-facebook.png" alt="facebook">
             <span class="visually-hidden">facebook</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a href="https://www.youtube.com/" class="footer-social-youtube">
+          <a href="#" class="footer-social-href">
+            <img src="./images/social-youtube.png" alt="youtube">
             <span class="visually-hidden">youtube</span>
           </a>
         </li>

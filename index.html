@@ -155,17 +155,20 @@
     <footer class="footer container">
       <ul class="footer-social">
         <li class="footer-social-item">
-          <a href="https://twitter.com/" class="footer-social-twitter">
+          <a href="#" class="footer-social-href">
+            <img src="./images/social-twitter.png" alt="twitter">
             <span class="visually-hidden">twitter</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a href="https://www.facebook.com/" class="footer-social-facebook">
+          <a href="#" class="footer-social-href">
+            <img src="./images/social-facebook.png" alt="facebook">
             <span class="visually-hidden">facebook</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a href="https://www.youtube.com/" class="footer-social-youtube">
+          <a href="#" class="footer-social-href">
+            <img src="./images/social-youtube.png" alt="youtube">
             <span class="visually-hidden">youtube</span>
           </a>
         </li>
@@ -184,31 +187,68 @@
     <div class="popup">
       <ul class="popup-list">
         <li class="popup-item">
-          <img src="./images/pop-up/hotel-2-small.png" alt="Маленькая картина отеля">
-          <h4 class="popup-header">Desert Quail Inn</h4>
-          <p class="popup-text">Мотель</p>
-          <img src="./images/pop-up/urn.png" alt="Корзина">
+          <a href="#" class="popup-item-info">
+            <img class="poup-image" src="./images/pop-up/hotel-2-small.png" height="48px" width="48px" alt="Маленькая картина отеля">
+            <div class="popup-text-wrapper">
+              <h4 class="popup-header">Desert Quail Inn</h4>
+              <p class="popup-text">Мотель</p>
+            </div>
+          </a>
+          <button class="popup-item-button">
+            <img src="./images/pop-up/urn.png" alt="Корзина">
+          </button>
         </li>
         <li class="popup-item">
-          <img src="./images/pop-up/hotel-3-small.png" alt="Маленькая картина отеля">
-          <h4 class="popup-header">Villas at Poco Diablo</h4>
-          <p class="popup-text">Апартаменты</p>
-          <img src="./images/pop-up/urn.png" alt="Корзина">
+          <a href="#" class="popup-item-info">
+            <img class="poup-image" src="./images/pop-up/hotel-3-small.png" height="48px" width="48px" alt="Маленькая картина отеля">
+            <div class="popup-text-wrapper">
+              <h4 class="popup-header">Villas at Poco Diablo</h4>
+              <p class="popup-text">Апартаменты</p>
+            </div>
+          </a>
+          <button class="popup-item-button">
+            <img src="./images/pop-up/urn.png" alt="Корзина">
+          </button>
         </li>
       </ul>
-      <button class="popup-button">Все избранные</button>
     </div>
+    <button class="popup-button">Все избранные</button>
   </div>
   <!--pop-up favorits end-->
   <!--form start-->
   <div class="data-popup">
-    <h1 class="data-header"></h1>
-    <button class="data-close">
-      <img src="./images/pop-up/X.svg" alt="Закрыть">
-    </button>
-    <form action="" class="data-form">
+    <div class="data-header-wrapper">
+      <div class="data-header-info">
+        <h2 class="data-header">Поиск гостиницы в Седоне</h2>
+        <button class="data-close">
+          <!-- <img src="./images/pop-up/X.svg" alt="Закрыть"> -->
+        </button>
+      </div>
+      <div class="data-wrapper">
+        <div class="data-wrapper-input">
+          <h3 class="data-header-text">Дата заезда:</h3>
+          <input class="data-input" type="text" value="Укажите дату">
+        </div>
+        <div class="data-wrapper-input">
+          <h3 class="data-header-text">Дата выезда:</h3>
+          <input class="data-input" type="text" value="Укажите дату">
+        </div>
+      </div>
+      <div class="tikets-wrapper">
+        <h3 class="data-header-text">Взрослые:</h3>
+        <input class="tikets-input" type="text" value="2">
+        <h3 class="data-header-text">Дети:</h3>
+        <span class="tikets-childe"></span>
+        <input class="tikets-input" type="text" value="1">
+      </div>
+      <button type="submit" class="data-search">Найти</button>
+    </div>
+  </div>
 
-    </form>
+  <div class="info-chlidren-wrapper">
+    <p class="info-chlidren">
+      Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+    </p>
   </div>
   <!--form end-->
 
