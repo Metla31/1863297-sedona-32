@@ -688,10 +688,11 @@ main {
 
 .checkbox:checked + .control-mark::before {
     content: '';
+    display: block;
     position: absolute;
-    width: 10px;
-    height: 10px;
-    background-image: url(/images/img_catalog/Vector.svg);
+    width: 20px;
+    height: 20px;
+    background: url("../images/img_catalog/Vector.svg") no-repeat;
     background-position: center;
 }
 
