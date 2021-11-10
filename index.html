@@ -224,7 +224,7 @@
     </footer>
     <!-- footer end -->
       <!--form start-->
-        <div class="modal-container modal-container-close">
+        <div class="modal-container modal-container-">
           <div class="data-popup">
             <div class="data-header-wrapper">
               <div class="data-header-info">
@@ -276,17 +276,15 @@
               <div class="tikets-wrapper">
                 <h3 class="data-header-text">Взрослые:</h3>
                 <form action="https://echo.htmlacademy.ru/" method="GET" class="tikets-input-wrapper">
-                  <button class="tikets-button-minus" type="button">
+                  <div class="tikets-input-wrapper">
+                    <input class="tikets-input" type="text" value="2">
+                  </div>
                     <svg class="button-minus" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
                     </svg>
-                  </button>
-                  <input class="tikets-input" type="text" value="2">
-                  <button class="tikets-button-plus" type="button">
                     <svg class="button-plus" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
                     </svg>
-                  </button>
                 </form>
                 <div class="tikets-header-container">
                   <h3 class="data-header-text" style="padding-left: 25px;">Дети:</h3>
@@ -299,17 +297,15 @@
                   </div>
                 </div>
                 <form action="https://echo.htmlacademy.ru/" method="GET" class="tikets-input-wrapper">
-                  <button class="tikets-button-minus" type="button">
+                  <div class="tikets-input-wrapper">
+                    <input class="tikets-input" type="text" value="1">
+                  </div>
                     <svg class="button-minus" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
                     </svg>
-                  </button>
-                  <input class="tikets-input" type="text" value="1">
-                  <button class="tikets-button-plus" type="button">
                     <svg class="button-plus" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
                     </svg>
-                  </button>
                 </form>
               </div>
               <button type="submit" class="data-search">Найти</button>
