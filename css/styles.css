@@ -1611,13 +1611,35 @@ main {
     align-items: center;
 }
 
-.data-input-ico {
+.data-input-button {
     position: absolute;
     display: block;
-    width: 15px;
-    height: 15px;
+    width: 40px;
+    height: 40px;
     right: 20px;
+    border: 0;
+    background: #F2F2F2;
 }
+
+.data-input-button:hover {
+    background: #E6E6E6;
+    opacity: 0.6;
+}
+
+.data-input-button:focus {
+    background: #E6E6E6;
+    outline: 3px solid #83B3D3;
+    border-radius: 4px;
+    opacity: 0.6;
+}
+
+.data-input-button:active {
+    background: #FFFFFF;
+    outline: 2px solid #000000;
+    opacity: 1;
+}
+
+
 
 .data-header-text {
     font-style: normal;
@@ -1657,6 +1679,29 @@ main {
     opacity: 1;
 }
 
+.input-fail {
+    position: absolute;
+    top: 50px;
+    left: 120px;
+    color: red;
+    display: none;
+}
+
+.input-fail-open {
+    display: block;
+}
+
+.input-ok {
+    position: absolute;
+    top: 50px;
+    left: 120px;
+    color: black;
+    display: none;
+}
+
+.input-ok-open {
+    display: block;
+}
 
 .tikets-wrapper {
     display: flex;
@@ -1752,25 +1797,31 @@ main {
 
 .button-minus {
     position: absolute;
-    left: 20px;
-    top: 20px;
+    left: 15px;
     display: block;
-    width: 13px;
-    height: 13px;
+    width: 25px;
+    height: 25px;
     padding-bottom: 3px;
     Opacity: 0.3;
+    border: 0;
 }
 
-.tikets-minus:hover {
+.minus {
+    position: absolute;
+    top: 11px;
+    right: 7px;
+}
+
+.button-minus:hover {
     Opacity: 1;
 }
 
-.tikets-minus:focus {
+.button-minus:focus {
     outline: #83B3D3 solid;
     border-radius: 4px;
 }
 
-.tikets-minus:active {
+.button-minus:active {
     opacity: 0.2;
 }
 
@@ -1779,14 +1830,26 @@ main {
 .button-plus {
     position: absolute;
     display: block;
-    right: 20px;
-    width: 13px;
-    height: 13px;
+    right: 15px;
+    width: 25px;
+    height: 25px;
     padding-top: 1px;
     Opacity: 0.3;
+    border: 0;
 }
 
+.button-plus:hover {
+    Opacity: 1;
+}
 
+.button-plus:focus {
+    outline: #83B3D3 solid;
+    border-radius: 4px;
+}
+
+.button-plus:active {
+    opacity: 0.2;
+}
 
 .data-search {
     display: block;

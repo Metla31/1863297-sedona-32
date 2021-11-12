@@ -235,7 +235,7 @@
                 <div class="data-wrapper-input">
                   <h3 class="data-header-text">Дата заезда:</h3>
                   <input class="data-input" type="text" name="дата заезда" value="27 апреля 2020">
-                  <span class="data-input-ico">
+                  <button type="button" class="data-input-button">
                     <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M5.75 10C6.05 10 6.25 9.8 6.25 9.5C6.25 9.2 6.05 9 5.75 9C5.45 9 5.25 9.2 5.25 9.5C5.25 9.8 5.45 10 5.75 10Z" fill="black"/>
                       <path d="M15 2H13V0H12V2H4V0H3V2H1C0.4 2 0 2.4 0 3V14C0 14.5 0.4 15 1 15H15C15.5 15 16 14.5 16 14V3C16 2.4 15.5 2 15 2ZM15 14H1V7H15V14ZM1 6V3H3V5H4V3H12V5H13V3H15V6H1Z" fill="black"/>
@@ -248,14 +248,14 @@
                       <path d="M10.25 11C9.95 11 9.75 11.2 9.75 11.5C9.75 11.8 9.95 12 10.25 12C10.55 12 10.75 11.8 10.75 11.5C10.75 11.2 10.55 11 10.25 11Z" fill="black"/>
                       <path d="M12.5 10C12.8 10 13 9.8 13 9.5C13 9.2 12.8 9 12.5 9C12.2 9 12 9.2 12 9.5C12 9.8 12.2 10 12.5 10Z" fill="black"/>
                       <path d="M12.5 11C12.2 11 12 11.2 12 11.5C12 11.8 12.2 12 12.5 12C12.8 12 13 11.8 13 11.5C13 11.2 12.8 11 12.5 11Z" fill="black"/>
-                      </svg>
-                    </span>
-                    <p class="visually-hidden">Мы не можем отправить вас в прошлое.</p>
+                    </svg>
+                  </button>
+                    <p class="input-fail input-fail-open">Мы не можем отправить вас в прошлое.</p>
                 </div>
                 <div class="data-wrapper-input">
                   <h3 class="data-header-text">Дата выезда:</h3>
                   <input class="data-input" type="text" name="дата выезда" value="1 сентября 2021">
-                  <span class="data-input-ico">
+                  <button type="button" class="data-input-button">
                     <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M5.75 10C6.05 10 6.25 9.8 6.25 9.5C6.25 9.2 6.05 9 5.75 9C5.45 9 5.25 9.2 5.25 9.5C5.25 9.8 5.45 10 5.75 10Z" fill="black"/>
                       <path d="M15 2H13V0H12V2H4V0H3V2H1C0.4 2 0 2.4 0 3V14C0 14.5 0.4 15 1 15H15C15.5 15 16 14.5 16 14V3C16 2.4 15.5 2 15 2ZM15 14H1V7H15V14ZM1 6V3H3V5H4V3H12V5H13V3H15V6H1Z" fill="black"/>
@@ -268,9 +268,9 @@
                       <path d="M10.25 11C9.95 11 9.75 11.2 9.75 11.5C9.75 11.8 9.95 12 10.25 12C10.55 12 10.75 11.8 10.75 11.5C10.75 11.2 10.55 11 10.25 11Z" fill="black"/>
                       <path d="M12.5 10C12.8 10 13 9.8 13 9.5C13 9.2 12.8 9 12.5 9C12.2 9 12 9.2 12 9.5C12 9.8 12.2 10 12.5 10Z" fill="black"/>
                       <path d="M12.5 11C12.2 11 12 11.2 12 11.5C12 11.8 12.2 12 12.5 12C12.8 12 13 11.8 13 11.5C13 11.2 12.8 11 12.5 11Z" fill="black"/>
-                      </svg>
-                    </span>
-                    <p class="visually-hidden">На эти даты есть свободные номера. Пока есть.</p>
+                    </svg>
+                  </button>
+                    <p class="input-ok input-ok-open">На эти даты есть свободные номера. Пока есть.</p>
                 </div>
               </div>
               <div class="tikets-wrapper">
@@ -279,12 +279,16 @@
                   <div class="tikets-input-wrapper">
                     <input class="tikets-input" type="text" value="2">
                   </div>
-                    <svg class="button-minus" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
-                    </svg>
-                    <svg class="button-plus" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
-                    </svg>
+                    <button type="button" class="button-minus">
+                      <svg class="minus" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
+                      </svg>
+                    </button>
+                    <button type="button" class="button-plus">
+                      <svg  width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
+                      </svg>
+                    </button>
                 </form>
                 <div class="tikets-header-container">
                   <h3 class="data-header-text" style="padding-left: 25px;">Дети:</h3>
@@ -300,12 +304,16 @@
                   <div class="tikets-input-wrapper">
                     <input class="tikets-input" type="text" value="1">
                   </div>
-                    <svg class="button-minus" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
-                    </svg>
-                    <svg class="button-plus" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
-                    </svg>
+                    <button type="button" class="button-minus">
+                      <svg class="minus" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
+                      </svg>
+                    </button>
+                    <button type="button" class="button-plus">
+                      <svg   width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
+                      </svg>
+                    </button>
                 </form>
               </div>
               <button type="submit" class="data-search">Найти</button>
