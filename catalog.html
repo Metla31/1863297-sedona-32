@@ -60,15 +60,15 @@
                   <path d="M6 0.300049L0 5.80005V12H12V5.80005L6 0.300049ZM11 11H1V6.20005L6 1.70005L11 6.20005V11Z" fill="white"/>
                   <path d="M4 10H5V7.5H7V10H8V6.5H4V10Z" fill="white"/>
                 </svg>
-                <span class="breadcrambs-link-arrow">
-                  <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4.8 3.60005L0.999999 0.200049C0.799999 4.88311e-05 0.399999 4.88311e-05 0.0999989 0.200049C-0.200001 0.400049 -0.100001 0.800049 0.0999989 1.00005L3.4 4.00005L0.199999 7.00005C-1.11759e-06 7.20005 -1.11759e-06 7.60005 0.199999 7.80005C0.199999 7.90005 0.499999 8.00005 0.599999 8.00005C0.699999 8.00005 0.899999 7.90005 0.999999 7.80005L4.8 4.40005C5.1 4.20005 5.1 3.80005 4.8 3.60005Z" fill="white"/>
-                  </svg>
-                </span>
               </a>
+              <span class="breadcrambs-link-arrow">
+                <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.8 3.60005L0.999999 0.200049C0.799999 4.88311e-05 0.399999 4.88311e-05 0.0999989 0.200049C-0.200001 0.400049 -0.100001 0.800049 0.0999989 1.00005L3.4 4.00005L0.199999 7.00005C-1.11759e-06 7.20005 -1.11759e-06 7.60005 0.199999 7.80005C0.199999 7.90005 0.499999 8.00005 0.599999 8.00005C0.699999 8.00005 0.899999 7.90005 0.999999 7.80005L4.8 4.40005C5.1 4.20005 5.1 3.80005 4.8 3.60005Z" fill="white"/>
+                </svg>
+              </span>
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link">Гостиницы</a>
+              <a href="#" class="breadcrumbs-link">Гостиницы</a>
             </li>
           </ul>
           <form action="https://echo.htmlacademy.ru/" method="GET" class="catalog-filter">
@@ -145,11 +145,13 @@
           <h2 class="visually-hidden">Поиск гостиниц</h2>
           <div class="sorting">
             <p class="found">Найдено гостиниц: 38</p>
-            <select class="select">
-              <option>Сначала дешевые</option>
-              <option>Сначала дорогие</option>
-              <option>Сначала популярные</option>
-            </select>
+            <div class="select-box">
+              <select class="select">
+                <option value="min to max">Сначала дешевые</option>
+                <option value="max to min">Сначала дорогие</option>
+                <option value="popular">Сначала популярные</option>
+              </select>
+            </div>
             <div class="bottom-sorting-wrapper">
               <button type="button" class="sorting-listmode">
                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -167,7 +169,7 @@
                   <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black"/>
                 </svg>
               </button>
-              <button type="button" class="sorting-listmode sorting-listmode-active">
+              <button type="button" class="sorting-listmode-active">
                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M2 0H0V2H2V0Z" fill="black"/>
                   <path d="M16 0H4V2H16V0Z" fill="black"/>
@@ -187,7 +189,7 @@
                 <img src="./images/img_catalog/Amara.jpg" alt="Картинка отеля" class="card-picture">
               </a>
               <div class="card-info">
-                <h3 class="card-name">Amara Resort & Spa</h3>
+                <a class="card-name">Amara Resort & Spa</a>
                 <p class="card-type">Гостиница</p>
                 <p class="card-price">От 4000 ₽</p>
                 <button type="button" class="button-details">подробнее</button>
@@ -203,7 +205,7 @@
                 <img src="./images/img_catalog/Desert.jpg" alt="Картинка отеля" class="card-picture">
               </a>
               <div class="card-info">
-                <h3 class="card-name">Desert Quail Inn</h3>
+                <a class="card-name">Desert Quail Inn</a>
                 <p class="card-type">Мотель</p>
                 <p class="card-price">От 3000 ₽</p>
                 <button type="button" class="button-details">подробнее</button>
@@ -219,7 +221,7 @@
                 <img src="./images/img_catalog/Villas.jpg" alt="Картинка отеля" class="card-picture">
               </a>
               <div class="card-info">
-                <h3 class="card-name">Villas at Poco Diablo</h3>
+                <a class="card-name">Villas at Poco Diablo</a>
                 <p class="card-type">Апартаменты</p>
                 <p class="card-price">От 2000 ₽</p>
                 <button type="button" class="button-details">подробнее</button>
@@ -235,7 +237,7 @@
                 <img src="./images/img_catalog/GreenTree.jpg" alt="Картинка отеля" class="card-picture">
               </a>
               <div class="card-info">
-                <h3 class="card-name">GreenTree Inn</h3>
+                <a class="card-name">GreenTree Inn</a>
                 <p class="card-type">Гостиница</p>
                 <p class="card-price">От 3000 ₽</p>
                 <button type="button" class="button-details">подробнее</button>
@@ -270,11 +272,13 @@
               </ul>
               <div class="pagination-controls">
                 <p class="pagination-text">Гостиниц на странице:</p>
-                <select class="pagination-select">
-                  <option>4</option>
-                  <option>8</option>
-                  <option>12</option>
-                </select>
+                <div class="select-box">
+                  <select class="pagination-select">
+                    <option value="4">4</option>
+                    <option value="8">8</option>
+                    <option value="12">12</option>
+                  </select>
+                </div>
               </div>
             </div>
           </div>

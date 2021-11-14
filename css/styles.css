@@ -16,6 +16,10 @@
     font-display: swap
 }
 
+*,*::before, *::after{
+    box-sizing: border-box;
+}
+
 html {
     height: 100%;
 }
@@ -736,7 +740,7 @@ main {
 .tel-number{
     display: block;
     width: 520px;
-    min-height: 50px;
+    height: 50px;
     margin: 0 auto;
     margin-top: 40px;
     font-style: normal;
@@ -815,6 +819,7 @@ main {
 }
 
 .breadcrumbs-item {
+    position: relative;
     margin-left: 26px;
     padding-bottom: 45px;
 }
@@ -824,17 +829,19 @@ main {
 }
 
 .breadcrumbs-link {
-    position: relative;
     display: block;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 21px;
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 .breadcrambs-link-arrow {
     position: absolute;
     right: -15px;
+    top: -3px;
 }
 
 .breadcrumbs-link:hover {
@@ -1209,6 +1216,28 @@ main {
     border: 2px solid #E6E6E6;
     border-radius: 4px;
     padding-left: 20px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 23px;
+
+}
+
+.select-box {
+    position: relative;
+}
+
+.select-box::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 12px;
+    height: 7px;
+    background-image: url("../images/img_catalog/options-arrow.svg");
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .select:hover  {
@@ -1241,7 +1270,14 @@ main {
 }
 
 .sorting-listmode-active {
+    display: block;
+    width: 48px;
+    min-height: 48px;
     border: 2px solid #000000;
+    border-radius: 4px;
+    margin-right: 8px;
+    background-color: #FFFFFF;
+
 }
 
 .sorting-listmode:last-child {
@@ -1274,11 +1310,12 @@ main {
 
 .card {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     width: 1056px;
     border-top: 1px solid #E6E6E6;
     border-bottom: 1px solid #E6E6E6;
 }
+
 
 .card-image {
     display: block;
@@ -1309,18 +1346,32 @@ main {
     column-gap: 8px;
     align-self: start;
     width: 320px;
-    padding-top: 30px;
-    padding-right: 361px;
+    padding-top: 20px;
+    margin-right: 361px;
 }
 
 .card-name {
     grid-column: 1 / -1;
     margin: 0px;
+    padding:5px 0;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 31px;
     color: #000000;
+}
+
+.card-name:hover {
+    color: #756257;
+}
+.card-name:focus {
+    outline: 3px solid #83B3D3;
+    border-radius: 4px;
+    color: #756257;
+}
+.card-name:active {
+    opacity: 0.3;
+    color: #756257;
 }
 
 
@@ -1352,11 +1403,11 @@ main {
 
 .button-details:hover {
     background: #615048;
-    outline: 3px solid #83B3D3;
-    border-radius: 4px;
 }
 .button-details:focus {
     background: #615048;
+    outline: 3px solid #83B3D3;
+    border-radius: 4px;
 }
 .button-details:active {
     opacity: 0.3;
@@ -1381,12 +1432,12 @@ main {
 
 .button-favorit:hover {
     background: #68A2CA;
-    outline: 3px solid #756257;
+    outline: 1px solid #756257;
     border-radius: 4px;
 }
 .button-favorit:focus {
     background: #68A2CA;
-    outline: 1px solid #756257;
+    outline: 3px solid #756257;
     box-sizing: border-box;
     border-radius: 4px;
 }
@@ -1397,6 +1448,7 @@ main {
 .button-favorit-active {
     font-style: normal;
     font-weight: bold;
+    width: 160px;
     font-size: 16px;
     line-height: 21px;
     text-align: center;
@@ -1409,11 +1461,11 @@ main {
 
 .button-favorit-active:hover {
     background: #6C9E42;
-    outline: 3px solid #756257;
     border-radius: 4px;
 }
 .button-favorit-active:focus {
     background: #6C9E42;
+    outline: 3px solid #756257;
 }
 .button-favorit-active:active {
     opacity: 0.3;
@@ -1572,6 +1624,7 @@ main {
     border-radius: 4px;
 }
 
+
 .pagination-item:last-child {
     margin-right: 0px;
 }
@@ -1715,11 +1768,13 @@ main {
 .data-wrapper-input {
     position: relative;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 5px;
 }
 
 .data-header-text {
+    flex-shrink: 0;
+    width: 150px;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -1767,31 +1822,16 @@ main {
     min-height: 40px;
     right: 20px;
     border: 0;
+    background-image: url("../images/pop-up/calendar.svg");
     background-color: transparent;
-}
-
-.data-input-button:hover {
-    background-color: transparent;
-    opacity: 0.6;
-}
-
-.data-input-button:focus {
-    background-color: #E6E6E6;
-    outline: 3px solid #83B3D3;
-    border-radius: 4px;
-    opacity: 0.6;
-}
-
-.data-input-button:active {
-    background-color: #FFFFFF;
-    outline: 2px solid #000000;
-    opacity: 1;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .input-fail {
     position: absolute;
     top: 50px;
-    left: 120px;
+    left: 156px;
     color: red;
     display: none;
 }
@@ -1803,7 +1843,7 @@ main {
 .input-ok {
     position: absolute;
     top: 50px;
-    left: 120px;
+    left: 156px;
     color: black;
     display: none;
 }
@@ -1825,23 +1865,33 @@ main {
     position: relative;
 }
 
+.data-text-childe {
+    width: 54px;
+    margin-left: 45px;
+    text-align: center;
+}
+
 .tikets-childe {
+    position: relative;
     display: block;
     width: 25px;
     height: 25px;
+    padding: 2px;
     border: 0;
     border-radius: 50%;
     background-color: #83B3D3;
     text-align: center;
     color: #FFFFFF;
-    margin-left: 15px;
+    margin-right: 15px;
 }
+
+
 
 .info-chlidren-wrapper {
     position: absolute;
     display: none;
-    top: 70px;
-    right: -116px;
+    top: 65px;
+    right: -103px;
     width: 256px;
     background: #333333;
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
@@ -1864,6 +1914,7 @@ main {
     right: 120px;
     top: -10px;
 }
+
 
 .info-chlidren {
     display: block;
@@ -1895,7 +1946,7 @@ main {
     background: #F2F2F2;
     border: 0;
     border-radius: 3px;
-    padding: 0 ;
+    padding: 0 45px;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
