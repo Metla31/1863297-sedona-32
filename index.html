@@ -20,7 +20,7 @@
             <a href="./catalog.html" class="navigation-link">Гостиницы</a>
           </li>
         </ul>
-        <a href="#" class="header-logo">
+        <a class="header-logo">
           <img src="./images/sedona_logo.png" alt="Логотип" class="header-logo-img" width="138px"
           height="70px">
         </a>
@@ -42,39 +42,37 @@
               <span class="navigation-like-info">12</span>
             </a>
                     <!--pop-up favorits start-->
-                    <div class="favorites">
+                    <div class="favorites">  <!-- pop-up open  class"favorites-open"-->
                       <div class="popup-arrow"></div>
                       <div class="popup">
                         <ul class="popup-list">
                           <li class="popup-item">
                             <a href="#" class="popup-item-info">
                               <img class="poup-image" src="./images/pop-up/hotel-2-small.png" height="48px" width="48px" alt="Маленькая картина отеля">
-                              <div class="popup-text-wrapper">
+                              <div>
                                 <h4 class="popup-header">Desert Quail Inn</h4>
                                 <p class="popup-text">Мотель</p>
                               </div>
                             </a>
                             <button type="button" class="popup-item-button">
-                              <img src="./images/pop-up/urn.png" alt="Корзина">
+
                             </button>
                           </li>
                           <li class="popup-item">
                             <a href="#" class="popup-item-info">
                               <img class="poup-image" src="./images/pop-up/hotel-3-small.png" height="48px" width="48px" alt="Маленькая картина отеля">
-                              <div class="popup-text-wrapper">
+                              <div>
                                 <h4 class="popup-header">Villas at Poco Diablo</h4>
                                 <p class="popup-text">Апартаменты</p>
                               </div>
                             </a>
                             <button type="button" class="popup-item-button">
-                              <img src="./images/pop-up/urn.png" alt="Корзина">
+
                             </button>
                           </li>
                         </ul>
                       </div>
-                      <a class="popup-button">
-                        <span class="popup-button-text">Все избранные</span>
-                      </a>
+                      <button type="button" class="popup-button">Все избранные</button>
                     </div>
                     <!--pop-up favorits end-->
           </li>
@@ -90,7 +88,7 @@
       <section class="main-intro">
         <img src="./images/welcome_sedona.svg" alt="welcome" class="main-logo">
         <div class="main-divider">
-          <img src="./images/background_divider.png" alt="divider">
+          <span class="visually-hidden">divider</span>
         </div>
         <h1 class="heading-intro title-wrapper">
           Седона — небольшой городок в Аризоне, заслуживающий большего!
@@ -110,7 +108,7 @@
           </p>
         </div>
         <img src="./images/photo-1.jpg" alt="Настоящий городок" class="benefits-foto-1" width="800px"
-        height="385px">
+        height="384px">
         <div class="benefits-cards-secondary benefits-card-bg">
           <img src="./images/icon-home.png" alt="Жилье" class="card-lodging" width="75px"
           height="72px">
@@ -142,7 +140,7 @@
           </p>
         </div>
         <img src="./images/photo-2.jpg" alt="Мост дьявола" class="benefits-foto-2" width="800px"
-        height="385px">
+        height="384px">
         <div class="benefits-card benefits-cards-primary benefits-card-textstyle">
           <h3 class="benefits-heading">Там есть мост дьявола</h3>
           <p class="benefits-number">— №2 —</p>
@@ -186,9 +184,7 @@
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
         <form action="https:/echo.htmlacademy.ru/" method="POST" class="subscribe-form">
-          <label for="subscribe" >
-            <input id="subscribe" placeholder="Ваш e-mail" type="email" name="email" class="subscribe-form-input" required>
-          </label>
+          <input id="subscribe" placeholder="Ваш e-mail" type="email" name="email" class="subscribe-form-input" required>
           <button type="submit" class="subscribe-button">Подписаться</button>
         </form>
       </section>
@@ -198,20 +194,17 @@
     <footer class="footer container">
       <ul class="footer-social">
         <li class="footer-social-item">
-          <a href="#" class="footer-social-href">
-            <img src="./images/social-twitter.png" alt="twitter">
+          <a href="#" class="footer-social-twitter">
             <span class="visually-hidden">twitter</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a href="#" class="footer-social-href">
-            <img src="./images/social-facebook.png" alt="facebook">
+          <a href="#" class="footer-social-facebook">
             <span class="visually-hidden">facebook</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a href="#" class="footer-social-href">
-            <img src="./images/social-youtube.png" alt="youtube">
+          <a href="#" class="footer-social-youtube">
             <span class="visually-hidden">youtube</span>
           </a>
         </li>
@@ -224,12 +217,13 @@
     </footer>
     <!-- footer end -->
       <!--form start-->
-        <div class="modal-container modal-container-">
+        <div class="modal-container modal-container-close">  <!-- open modal - delete class="modal-container-close"-->
           <div class="data-popup">
-            <div class="data-header-wrapper">
               <div class="data-header-info">
                 <h2 class="data-header">Поиск гостиницы в Седоне</h2>
-                <button class="data-close"></button>
+                <button class="popup-close">
+                  <span class="visually-hidden">popup-close</span>
+                </button>
               </div>
               <div class="data-wrapper">
                 <div class="data-wrapper-input">
@@ -317,7 +311,6 @@
                 </form>
               </div>
               <button type="submit" class="data-search">Найти</button>
-            </div>
           </div>
         </div>
       <!--form end-->
