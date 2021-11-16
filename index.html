@@ -24,8 +24,8 @@
           <img src="./images/sedona_logo.png" alt="Логотип" class="header-logo-img" width="138px"
           height="70px">
         </a>
-        <ul class="navigation-list">
-          <li class="navigation-item">
+        <ul class="navigation-buttons">
+          <li class="navigation-item-buttons">
             <a href="#" class="navigation-link navigation-search">
               <span class="visually-hidden">поиск</span>
               <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -33,7 +33,7 @@
               </svg>
             </a>
           </li>
-          <li class="navigation-item navigation-popup">
+          <li class="navigation-item-buttons navigation-popup">
             <a href="#" class="navigation-link navigation-like">
               <span class="visually-hidden">понравилось</span>
               <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -42,7 +42,7 @@
               <span class="navigation-like-info">12</span>
             </a>
                     <!--pop-up favorits start-->
-                    <div class="favorites">  <!-- pop-up open  class"favorites-open"-->
+                    <div class="favorites favorites-open">  <!-- pop-up open  class"favorites-open"-->
                       <div class="popup-arrow"></div>
                       <div class="popup">
                         <ul class="popup-list">
@@ -76,7 +76,7 @@
                     </div>
                     <!--pop-up favorits end-->
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item-buttons">
             <button class="navigation-button">Хочу сюда!</button>
           </li>
         </ul>
@@ -94,7 +94,7 @@
           Седона — небольшой городок в Аризоне, заслуживающий большего!
         </h1>
         <p class="subtitle">
-          Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+          Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
         </p>
       </section>
       <section class="benefits">
@@ -109,40 +109,46 @@
         </div>
         <img src="./images/photo-1.jpg" alt="Настоящий городок" class="benefits-foto-1" width="800px"
         height="384px">
-        <div class="benefits-cards-secondary benefits-card-bg">
-          <img src="./images/icon-home.png" alt="Жилье" class="card-lodging" width="75px"
-          height="72px">
+        <div class="benefits-cards-secondary benefits-card-home">
           <h3 class="benefits-heading benefits-heading-subclass">
             Жильё
           </h3>
           <p class="benefits-text-othercard">
-            Рекомендуем пожить в настоящем мотеле, всё как в кино!
+            Рекомендуем пожить
+            <br>
+            в настоящем мотеле,
+            <br>
+            всё как в кино!
           </p>
         </div>
         <div class="benefits-cards-secondary benefits-cards-food">
-          <img src="./images/icon-eat.png" alt="Еда" class="card-foot" width="74px"
-          height="70px">
           <h3 class="benefits-heading benefits-heading-subclass">
             Еда
           </h3>
           <p class="benefits-text-othercard">
-            Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+            Всегда заказывайте
+            <br>
+            топовый фирменный бургер,
+            <br>
+            вы не разочаруетесь!
           </p>
         </div>
-        <div class="benefits-cards-secondary benefits-card-bg">
-          <img src="./images/icon-souvenir.png" alt="Сувениры" class="card-souvenir" width="65px"
-          height="76px">
+        <div class="benefits-cards-secondary benefits-card-souvenir">
           <h3 class="benefits-heading benefits-heading-subclass">
             Сувениры
           </h3>
           <p class="benefits-text-othercard">
-            Не только китайского, но и настоящего местного производства!
+            Не только китайского,
+            <br>
+            но и настоящего местного
+            <br>
+            производства!
           </p>
         </div>
         <img src="./images/photo-2.jpg" alt="Мост дьявола" class="benefits-foto-2" width="800px"
         height="384px">
         <div class="benefits-card benefits-cards-primary benefits-card-textstyle">
-          <h3 class="benefits-heading">Там есть мост дьявола</h3>
+          <h3 class="benefits-heading">Там есть<br> мост дьявола</h3>
           <p class="benefits-number">— №2 —</p>
           <p class="benefits-text-bluecard">
             Да, по нему можно пройти! Если вы осмелитесь, разумеется
@@ -174,14 +180,14 @@
       <section class="search">
         <h2 class="heading">Заинтересовались?</h2>
         <p class="search-text">
-          Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+          Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в  Седоне
         </p>
         <a href="./catalog.html" class="search-hotel">Поиск гостиницы в седоне</a>
       </section>
       <section class="subscribe">
         <h2 class="heading">Подпишитесь на рассылку</h2>
-        <p class="search-text">
-          Только полезная информация и никакого спама, честное бойскаутское!
+        <p class="search-text-subscribe">
+          Только полезная информация и никакого спама,<br> честное бойскаутское!
         </p>
         <form action="https:/echo.htmlacademy.ru/" method="POST" class="subscribe-form">
           <input id="subscribe" placeholder="Ваш e-mail" type="email" name="email" class="subscribe-form-input" required>
@@ -211,8 +217,7 @@
       </ul>
       <a href="tel:+78128121212" class="tel-number">+7 (812) 812-12-12</a>
       <a href="https://htmlacademy.ru/" class="footer-logo-link">
-        <img src="./images/logo_htmlacademy.png" alt="Логотип академии" class="footer-logo" width="115px"
-        height="35px">
+        <span class="visually-hidden">logo_htmlacademy</span>
       </a>
     </footer>
     <!-- footer end -->
@@ -225,7 +230,7 @@
                   <span class="visually-hidden">popup-close</span>
                 </button>
               </div>
-              <form action="https://echo.htmlacademy.ru/" method="GET">
+              <form class="modal-form" action="https://echo.htmlacademy.ru/" method="GET">
                 <div class="data-wrapper-input">
                   <h3 class="data-header-text">Дата заезда:</h3>
                   <input class="data-input" type="text" name="дата заезда" value="27 апреля 2020">
@@ -259,14 +264,14 @@
                   </div>
                 <div class="tikets-header-container">
                   <h3 class="data-text-childe">Дети:</h3>
-                  <p class="tikets-childe">i
+                  <div class="tikets-childe">i
                     <div class="info-chlidren-wrapper">
                       <div class="info-children-arrow"></div>
                       <p class="info-chlidren">
-                        Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                        Укажите количество детей,<br> которые будут с вами, возраст<br> которых от 6 до 18 лет. Дети<br> до 6 лет размещаются<br> бесплатно.
                       </p>
                     </div>
-                  </p>
+                  </div>
                 </div>
                 <div class="tikets-input-wrapper">
                     <input class="tikets-input" type="text" value="1">

@@ -90,7 +90,7 @@
                   <span class="control-label">Wi-Fi</span>
                 </label>
             </fieldset>
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group" style="padding-right: 39px;">
               <legend class="catalog-filter-title">Тип жилья:</legend>
               <label class="catalog-title-label">
                 <input class="visually-hidden radio" type="radio" name="appartment-type" value="hotel" checked>
@@ -209,7 +209,7 @@
                 <p class="card-type">Мотель</p>
                 <p class="card-price">От 3000 ₽</p>
                 <button type="button" class="button-details">подробнее</button>
-                <button type="button" class="button-favorit-active">В избранном</button>
+                <button type="button" class="button-favorit">В избранное</button>
               </div>
               <div class="rating">
                 <img src="./images/img_catalog/3stars.png" alt="3 звезды" class="rating-picture-3">
@@ -225,7 +225,7 @@
                 <p class="card-type">Апартаменты</p>
                 <p class="card-price">От 2000 ₽</p>
                 <button type="button" class="button-details">подробнее</button>
-                <button type="button" class="button-favorit">В избранное</button>
+                <button type="button" class="button-favorit-active">В избранном</button>
               </div>
               <div class="rating">
                 <img src="./images/img_catalog/2stars.png" alt="2 звезды" class="rating-picture-2">
@@ -272,7 +272,7 @@
               </ul>
               <div class="pagination-controls">
                 <p class="pagination-text">Гостиниц на странице:</p>
-                <div class="select-box">
+                <div class="select-box-pagination">
                   <select class="pagination-select">
                     <option value="4">4</option>
                     <option value="8">8</option>
@@ -284,11 +284,11 @@
           </div>
         </section>
         <section class="catalog-subscribe">
-          <h2 class="heading">Подпишитесь на рассылку</h2>
+          <h2 class="heading-catalog">Подпишитесь на рассылку</h2>
           <p class="search-text">
             Только полезная информация и никакого спама, честное бойскаутское!
           </p>
-          <form action="https:/echo.htmlacademy.ru/" method="POST" class="subscribe-form">
+          <form action="https:/echo.htmlacademy.ru/" method="POST" class="subscribe-form-catalog">
             <label for="subscribe">
               <input id="subscribe" placeholder="Ваш e-mail" type="email" name="email" class="subscribe-form-input" required>
             </label>
@@ -318,8 +318,7 @@
       </ul>
       <a href="tel:+78128121212" class="tel-number">+7 (812) 812-12-12</a>
       <a href="https://htmlacademy.ru/" class="footer-logo-link">
-        <img src="./images/logo_htmlacademy.png" alt="Логотип академии" class="footer-logo" width="115px"
-        height="35px">
+        <span class="visually-hidden">logo_htmlacademy</span>
       </a>
     </footer>
     <!-- footer end -->
