@@ -35,7 +35,9 @@ body {
     color: #000000;
     background-color: #fff;
     outline-color:#83B3D3;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
 }
+
 
 
 main {
@@ -101,6 +103,7 @@ main {
     color: #000000;
 }
 
+
 .navigation-link:hover {
     color: #756257;
 }
@@ -119,6 +122,10 @@ main {
 }
 
 
+.navigation-item-main {
+    padding-bottom: 2px;
+}
+
 .header-logo {
     position: relative;
     margin-right: 196px;
@@ -134,10 +141,9 @@ main {
 .navigation-buttons {
     margin: 0;
     padding: 0;
-    width: 270px;
+    width: 265px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     list-style-type: none;
 }
 
@@ -148,6 +154,15 @@ main {
     font-size: 20px;
     line-height: 26px;
     padding-left: 7px;
+}
+
+.navigation-buttons-padding {
+    margin-left: auto;
+}
+
+.navigation-button-href {
+    display: block;
+    padding-top: 8px;
 }
 
 .navigation-search {
@@ -947,6 +962,10 @@ main {
     padding-top: 2px;
 }
 
+.catalog-group-padding {
+    padding-right: 39px;
+}
+
 .catalog-filter-prise {
     display: flex;
     justify-content: space-between;
@@ -1106,6 +1125,7 @@ main {
     width: 144px;
     min-height: 50px;
     padding-left: 18px;
+    padding-right: 45px;
     background-color: Transparent;
     border: 2px solid #FFFFFF;
     border-right: 0px;
@@ -1119,8 +1139,13 @@ main {
 
 .filter-input-min::-webkit-outer-spin-button,
 .filter-input-min::-webkit-inner-spin-button {
+    -webkit-appearance: none;
     appearance: none;
     margin: 0;
+}
+
+.filter-input-min[type="number"] {
+    -moz-appearance: textfield;
 }
 
 .filter-input-min:hover {
@@ -1139,6 +1164,7 @@ main {
     width: 144px;
     min-height: 50px;
     padding-left: 14px;
+    padding-right: 45px;
     background-color: Transparent;
     border: 2px solid #FFFFFF;
     box-sizing: border-box;
@@ -1151,8 +1177,13 @@ main {
 
 .filter-input-max::-webkit-outer-spin-button,
 .filter-input-max::-webkit-inner-spin-button {
+    -webkit-appearance: none;
     appearance: none;
     margin: 0;
+}
+
+.filter-input-max[type="number"] {
+    -moz-appearance: textfield;
 }
 
 .filter-input-max:hover {
@@ -1183,6 +1214,10 @@ main {
     position: absolute;
     height: 4px;
     background-color: #FFFFFF;
+}
+
+.range-ber-width {
+    width: 227px;
 }
 
 .range-toggle {
@@ -1297,12 +1332,14 @@ main {
     min-height: 45px;
     border: 2px solid #E6E6E6;
     border-radius: 4px;
+    padding: 8px 0;
     padding-left: 18px;
     font-family: "PT Sans", "Arial", sans-serif;
     font-style: normal;
     font-size: 18px;
     line-height: 23px;
     align-items: center;
+
 }
 
 .select-box::after {
@@ -1438,17 +1475,27 @@ main {
     font-size: 24px;
     line-height: 31px;
     color: #000000;
+    text-decoration: none;
 }
 
-.card-name:hover {
+.card-name-link {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.card-name-link:hover {
     color: #756257;
 }
-.card-name:focus {
+.card-name-link:focus {
     outline: 3px solid #83B3D3;
     border-radius: 4px;
     color: #756257;
 }
-.card-name:active {
+.card-name-link:active {
     opacity: 0.3;
     color: #756257;
 }
@@ -1723,7 +1770,21 @@ main {
 
 .select-box-pagination {
     position: relative;
+    padding: 8px 0;
     padding-top: 5px;
+}
+
+.select-box-pagination::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 26px;
+    right: 20px;
+    width: 12px;
+    height: 7px;
+    background-image: url("../images/img_catalog/options-arrow.svg");
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .pagination-text {
@@ -2093,6 +2154,7 @@ main {
     padding-bottom: 3px;
     Opacity: 0.3;
     border: 0;
+    background-color: transparent;
 }
 
 .minus {
@@ -2125,6 +2187,7 @@ main {
     padding-top: 1px;
     Opacity: 0.3;
     border: 0;
+    background-color: transparent;
 }
 
 .button-plus:hover {

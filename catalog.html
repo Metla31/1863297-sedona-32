@@ -3,26 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Каталог Седона</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/minstyles.css">
 </head>
 <body class="container">
     <!-- Header start -->
     <header class="page-header container">
       <nav class="navigation container">
         <ul class="navigation-list">
-          <li class="navigation-item navigation-active" style="padding-bottom: 2px;">
-            <a class="navigation-link">Главная</a>
+          <li class="navigation-item  navigation-item-main">
+            <a href="./index.html" class="navigation-link">Главная</a>
           </li>
           <li class="navigation-item">
             <a href="#" class="navigation-link">О Седоне</a>
           </li>
-          <li class="navigation-item">
-            <a href="./catalog.html" class="navigation-link">Гостиницы</a>
+          <li class="navigation-item navigation-active">
+            <a href="#" class="navigation-link">Гостиницы</a>
           </li>
         </ul>
-        <a class="header-logo">
-          <img src="./images/sedona_logo.png" alt="Логотип" class="header-logo-img" width="138px"
-          height="70px">
+        <a href="./index.html" class="header-logo">
+          <img src="./images/sedona_logo.png" alt="Логотип" class="header-logo-img" width="138"
+          height="70">
         </a>
         <ul class="navigation-buttons">
           <li class="navigation-item-buttons">
@@ -33,7 +33,7 @@
               </svg>
             </a>
           </li>
-          <li class="navigation-item-buttons navigation-popup" style="padding-right: 14px;">
+          <li class="navigation-item-buttons navigation-popup">
             <a href="#" class="navigation-link navigation-like">
               <span class="visually-hidden">понравилось</span>
               <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -42,8 +42,8 @@
               <span class="navigation-like-info">12</span>
             </a>
           </li>
-          <li class="navigation-item-buttons" style="padding-right: 6px;">
-            <button class="navigation-button">Хочу сюда!</button>
+          <li class="navigation-item-buttons navigation-buttons-padding">
+            <a class="navigation-button navigation-button-href">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -91,7 +91,7 @@
                   <span class="control-label">Wi-Fi</span>
                 </label>
             </fieldset>
-            <fieldset class="catalog-filter-group" style="padding-right: 39px;">
+            <fieldset class="catalog-filter-group catalog-group-padding">
               <legend class="catalog-filter-title">Тип жилья:</legend>
               <label class="catalog-title-label">
                 <input class="visually-hidden radio" type="radio" name="appartment-type" value="hotel" checked>
@@ -124,7 +124,7 @@
                   </div>
                   <div class="range">
                     <div class="range-scale">
-                      <div class="range-bar" style="width: 227px;">
+                      <div class="range-bar range-ber-width">
                         <button class="range-toggle toggle-min" type="button">
                           <span class="visually-hidden">Изменить минимальную цену.</span>
                         </button>
@@ -190,7 +190,9 @@
                 <img src="./images/img_catalog/Amara.jpg" alt="Картинка отеля" class="card-picture">
               </a>
               <div class="card-info">
-                <a class="card-name">Amara Resort & Spa</a>
+                <h3 class="card-name">
+                  <a  href="#" class="card-name-link">Amara Resort & Spa</a>
+                </h3>
                 <p class="card-type">Гостиница</p>
                 <p class="card-price">От 4000 ₽</p>
                 <button type="button" class="button-details">подробнее</button>
@@ -206,7 +208,9 @@
                 <img src="./images/img_catalog/Desert.jpg" alt="Картинка отеля" class="card-picture">
               </a>
               <div class="card-info">
-                <a class="card-name">Desert Quail Inn</a>
+                <h3 class="card-name">
+                  <a  href="#" class="card-name-link">Desert Quail Inn</a>
+                </h3>
                 <p class="card-type">Мотель</p>
                 <p class="card-price">От 3000 ₽</p>
                 <button type="button" class="button-details">подробнее</button>
@@ -222,7 +226,9 @@
                 <img src="./images/img_catalog/Villas.jpg" alt="Картинка отеля" class="card-picture">
               </a>
               <div class="card-info">
-                <a class="card-name">Villas at Poco Diablo</a>
+                <h3 class="card-name">
+                  <a  href="#" class="card-name-link">Villas at Poco Diablo</a>
+                </h3>
                 <p class="card-type">Апартаменты</p>
                 <p class="card-price">От 2000 ₽</p>
                 <button type="button" class="button-details">подробнее</button>
@@ -238,7 +244,9 @@
                 <img src="./images/img_catalog/GreenTree.jpg" alt="Картинка отеля" class="card-picture">
               </a>
               <div class="card-info">
-                <a class="card-name">GreenTree Inn</a>
+                <h3 class="card-name">
+                  <a href="#" class="card-name-link">GreenTree Inn</a>
+                </h3>
                 <p class="card-type">Гостиница</p>
                 <p class="card-price">От 3000 ₽</p>
                 <button type="button" class="button-details">подробнее</button>
@@ -289,7 +297,7 @@
           <p class="search-text-subscribe">
             Только полезная информация и никакого спама, честное бойскаутское!
           </p>
-          <form action="https:/echo.htmlacademy.ru/" method="POST" class="subscribe-form-catalog">
+          <form action="https://echo.htmlacademy.ru" method="POST" class="subscribe-form-catalog">
             <label for="subscribe">
               <input id="subscribe" placeholder="Ваш e-mail" type="email" name="email" class="subscribe-form-input" required>
             </label>
@@ -318,7 +326,7 @@
         </li>
       </ul>
       <a href="tel:+78128121212" class="tel-number">+7 (812) 812-12-12</a>
-      <a href="https://htmlacademy.ru/" class="footer-logo-link">
+      <a href="https://htmlacademy.ru" class="footer-logo-link">
         <span class="visually-hidden">logo_htmlacademy</span>
       </a>
     </footer>
